@@ -1,3 +1,4 @@
+//calls slick function for image slider
 $(document).ready(function(){
       $('.your-class').slick({
          infinite: true,
@@ -6,11 +7,12 @@ $(document).ready(function(){
   	     
       });
     });
-
+//carousel function called 
 $('#myCarousel').carousel({
   interval: 40000
 });
 
+//this function fethches the carousel element and cycles while binding this to the element.
 $('.carousel .item').each(function(){
   var next = $(this).next();
   if (!next.length) {
