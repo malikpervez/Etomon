@@ -1,0 +1,68 @@
+footer {
+	display: inline-flex;
+}
+
+#hero {
+    position: relative;
+}
+
+#course-form{
+    border: 1px dotted #999;
+    border-radius: 0;
+}
+#carousel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+.carousel-item {
+    background: no-repeat center/cover;
+}
+
+.book {
+    height: 100px;
+    width: 100px;
+    bottom: 9vh;
+}
+
+#search {
+	
+}
+
+.blue {
+	margin-top: 10px;
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+}
+
+.mid-info {
+	margin-top: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.thumbnail {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail img {
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin: 0 auto;
+    
+}

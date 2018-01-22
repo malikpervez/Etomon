@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/slick.css">
+	<link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Etomon</title>
+</head>
+
+<body>
+	<div class="jumbotron jumbotron-fluid hero" id="hero">
+		<div class="container">
+			<!-- Here is the carousel, `position:absolute` -->
+			<div id="carousel" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+					<li data-target="#carousel" data-slide-to="2"></li>
+				</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item active" style="background-image:url('https://picsum.photos/1280/710')"></div>
+
+					<div class="carousel-item" style="background-image:url('http://via.placeholder.com/1280x710/adeee3/ffffff?text=Another+image')">
+					</div>
+					<div class="carousel-item" style="background-image:url('http://via.placeholder.com/1280x710/adeee3/ffffff?text=Another+image')">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-md-7 mb-4 book">
+					<img src="./images/book.png" class="book">
+					<h1 class="logo h2 text-light">Etomon</h1>
+				</div>
+				<div class="col">
+					<input type="text" id="search" placeholder="Search?">
+					<button type="submit">Submit</button>
+					<form class="form-group" id="course-form">
+						subject/course <br>
+						<input type="text" placeholder="Graphic Design"> <br> level <br>
+						<input type="text" placeholder="Intermediate"> <br> starting <br>
+						<input type="text" placeholder="mm/dd/yyyy"> <br> ending <br>
+						<input type="text" placeholder="mm/dd/yyy"> <br>
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</div><!--row for logo,search, and form -->
+		</div><!-- container for top image carousel -->
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1 class="popular text-center">Most Popular Subjects</h1>
+			</div>
+		</div> <!-- row for popular subjects -->
+		<div class="row">
+			<div class="col blue">
+				<div class="your-class">
+  					<div>your content</div>
+  					<div>your content</div>
+  					<div>your content</div>
+  					<div>your content</div>
+  					<div>your content</div>
+  					<div>your content</div>
+				</div>
+		
+			</div>
+		</div><!--row for image carousel below popular subjects -->
+		<div class= "row mid-info">
+			<div class="col text-center" >class courses</div>
+			<div class="col text-center">teacher and Student Relationships</div>
+			<div class="col text-center">shining start teachers</div>
+		</div><!--row for class courses, teachers, and shining -->
+		<div class = "row">
+			 <h1 style="margin: auto;">Course Major</h1>
+		</div>
+		<div class="row">
+			 <div class="col">
+                <a href="#" class="thumbnail">
+                    <img src="http://via.placeholder.com/1280x710/adeee3/ffffff?text=Another+image">
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="thumbnail">
+                    <img src="http://via.placeholder.com/1280x710/adeee3/ffffff?text=Another+image">
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="thumbnail">
+                    <img src="http://via.placeholder.com/1280x710/adeee3/ffffff?text=Another+image">
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="thumbnail">
+                    <img src="http://via.placeholder.com/1280x710/adeee3/ffffff?text=Another+image" >
+                </a>
+            </div>
+		</div>
+		<div class="row">
+			<div class="col">
+			<select>
+				  <option value="language">language</option>
+				  <option value="">content</option>
+				  <option value="">content</option>
+				  <option value="">conten</option>
+			</select>
+			<br>
+			<br>
+			<select>
+				  <option value="USD">USD Dollar</option>
+				  <option value="content">content</option>
+				  <option value="content">content</option>
+				  <option value="content">content</option>
+			</select>
+			</div>
+		</div>
+	</div> <!-- container for popular subjects, image carousel, and the mid-info below -->
+	<footer>
+		<div class="row">
+			<div class="col-4"></div>
+			<div class="col-4">about us</div>
+			<div class="col-4"></div>
+		</div>
+	</footer>
+
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+
+</body>
+</html>
