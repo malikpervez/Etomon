@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'champagne';
+    src: url(./fonts/champagne.ttf)
+}
+
+
 footer {
 	display: inline-flex;
 }
@@ -26,7 +32,7 @@ footer {
 }
 
 .logo {
-    height: 28vh;
+    height: 30vh;
     width: 15vw;
     position: relative;
     bottom: 100px;
@@ -78,6 +84,7 @@ footer {
     background:url(../images/sign-up.png) no-repeat;
     background-size: contain;
     background-color: #e0f7fa;
+    font-family: 'champagne';
     opacity: .8;
     position: relative;
     left:50vw;
@@ -90,11 +97,13 @@ footer {
 
 #signup-icon{
     margin-left: 30px;
+
 }
 
 #signin{
     background:url(../images/sign-in.png) no-repeat;
     background-size: contain;
+    font-family: 'champagne';
     opacity: .8;
     position: relative;
     left:55vw;
@@ -128,6 +137,7 @@ footer {
 	padding-bottom: 25px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+    font-family: 'myriad pro'
 }
 
 .thumbnail {
