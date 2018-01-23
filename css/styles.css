@@ -27,7 +27,7 @@ footer {
 
 .logo {
     height: 30vh;
-    width: 20vw;
+    width: 15vw;
     position: relative;
     bottom: 100px;
     right: 100px;
@@ -55,6 +55,7 @@ footer {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
+  opacity: .8;
   z-index: 1;
 }
 
@@ -75,13 +76,42 @@ footer {
 
 #signup{
     background:url(../images/sign-up.png) no-repeat;
+    background-size: contain;
+    background-color: #e0f7fa;
+    opacity: .8;
     position: relative;
+    left:35vw;
+    bottom:12vh;
     z-index: 1;
-    overflow: hidden;
     cursor:pointer;
     border:none;
-    width:50px;
-    height:50px;background
+    border-radius: 5px;
+}
+
+#signup-icon{
+    margin-left: 30px;
+}
+
+#signin{
+    background:url(../images/sign-in.png) no-repeat;
+    background-size: contain;
+    opacity: .8;
+    position: relative;
+    left:41vw;
+    bottom:12vh;
+    z-index: 1;
+    cursor:pointer;
+    border:none;
+    border-radius: 5px;
+}
+
+#signin:hover{
+    background-color: #e0f7fa;
+
+}
+
+#signin-icon{
+    margin-left: 30px;
 }
 
 .blue {
