@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<div class="jumbotron jumbotron-fluid hero" id="hero">
+	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
 				<div class="row">
 					<div class="col-6 mb-4">
@@ -45,7 +45,7 @@
 		</div><!-- container for top image carousel -->
 	</div>
 
-	<div class="container">
+	<div class="container" style="position:relative; top: 30vh;">
 		 <!-- row for popular subjects -->
 		<div class="row">
 			<div class="col"><!--jquery slick js ui interface for image slider -->
@@ -78,22 +78,19 @@
 		</div><!--row for toponline,bestteacher,and bestprize-->
 	</div>
 	<div class="container">
-		<div class="row position-relative mb-7">
+		<div class="row mb-7">
 			<div class="col-7">
 				<!--placeholder for video -->
-				<div id="carousel" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
+				<div id="carousel" class="carousel slide" data-ride="carousel" style="position: relative; top: 15vh;">
+				<ol class="carousel-indicators" style="color: black;">
 					<li data-target="#carousel" data-slide-to="0" class="active"></li>
 					<li data-target="#carousel" data-slide-to="1"></li>
 					<li data-target="#carousel" data-slide-to="2"></li>
 				</ol>
 				<div class="carousel-inner">
-					<div class="carousel-item active" style="background-image:url('http://via.placeholder.com/250x150')"></div>
-
-					<div class="carousel-item" style="background-image:url('http://via.placeholder.com/250x150')">
-					</div>
-					<div class="carousel-item" style="background-image:url('http://via.placeholder.com/250x150')">
-					</div>
+					<div class="carousel-item active" ><iframe width="560" height="315" src="https://www.youtube.com/embed/O7VaXlMvAvk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+					<div class="carousel-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/O7VaXlMvAvk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+					<div class="carousel-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/O7VaXlMvAvk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 				</div>
 			</div>
 				
@@ -114,7 +111,7 @@
 			</div>
 		</div> <!--row for video and upcoming events -->
 	</div>
-	<div class="container">
+	<div class="container bottom-half">
 		<div class="row">
 			<div class="col-4">
 				<img src="./images/class-course-icon.png" class="teach">
@@ -130,9 +127,9 @@
 			</div>
 		</div><!-- course icons -->
 		<div class="row">
-			<h1>Most popular courses</h1>
+			<h1 style="font-family: 'champagne-limo'">Most popular courses</h1>
 		</div>
-		<div class="row" style="margin-left: 10px;">
+		<div class="row" style="margin-left: 100px;">
 			<div class="col-3"><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a></div>
 			<div class="col-3"><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a></div>
 			<div class="col-3"><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a></div>
@@ -159,13 +156,6 @@
 			</div>
 		</div>
 	</div> <!-- container for popular subjects, image carousel, and the mid-info below -->
-	<footer>
-		<div class="row">
-			<div class="col-4"></div>
-			<div class="col-4">about us</div>
-			<div class="col-4"></div>
-		</div>
-	</footer>
 
 <script
 	src="https://code.jquery.com/jquery-3.3.1.min.js"

@@ -13,7 +13,9 @@
     src: url(./fonts/Myriad-Pro.ttf);
 }
 
-
+#hero{
+    position:absolute;
+}
 footer {
 	display: inline-flex;
 }
@@ -23,13 +25,8 @@ footer {
     height: 10px !important;
     border-radius: 100% !important;
 }
-#hero {
-    position: relative;
-}
 
-#course-form{
-    
-}
+
 #carousel {
     position: absolute;
     top: 0;
@@ -175,8 +172,6 @@ footer {
 }
 .greyoverlay{
     background-color: #8080802b;
-    position: relative;
-    bottom: 18vh;
 }
 
 .greyoverlay h2{
@@ -189,15 +184,18 @@ footer {
 }
 
 .vid-group{
-    position:relative;
-    bottom: 10vh;
+ 
 }
 
 #vid-description{
-    margin-top: 50px;
+    margin-top: 5vh;
 }
 #vid-description h1{
     font-family: 'champagne-limo';
+}
+
+#vid-description ul li {
+    position: relative;
 }
 
 .events {
@@ -207,14 +205,18 @@ footer {
 }
 
 #videos{
-    width: 100%;
-    height: 100%;
+   
     position: relative;
-    bottom: 10vh;
+    
 }
 
 .teach{
     max-width: 30%;
     display:inline-block;
     margin: auto;
+}
+
+.bottom-half{
+    position: relative;
+    bottom: 40vh;
 }
