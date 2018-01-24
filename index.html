@@ -14,7 +14,7 @@
 	<div class="jumbotron jumbotron-fluid hero" id="hero">
 		<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-7 mb-4">
+					<div class="col-6 mb-4">
 						<img src="./images/logo.png" class="logo">
 						<button id="signup"><span id="signup-icon"></span>Sign Up</button>
       					<button id="signin"><span id="signin-icon"></span>Sign In</button>
@@ -42,19 +42,14 @@
 					</div>
 				</div>
 			</div>
-
-		
 		</div><!-- container for top image carousel -->
 	</div>
 
 	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h1 class="popular">Upcoming Courses</h1>
-			</div>
-		</div> <!-- row for popular subjects -->
+		 <!-- row for popular subjects -->
 		<div class="row">
 			<div class="col"><!--jquery slick js ui interface for image slider -->
+			<h1 id="upcoming">Upcoming Courses</h1>
 				<div class="slick-slider">
   					<img src="./images/logo.png" class="">
   					<img src="./images/logo.png" class="">
@@ -64,7 +59,8 @@
 		
 			</div>
 		</div><!--row for image carousel below popular subjects -->
-		
+	</div>
+	<div class="container-fluid">
 		<div class="row greyoverlay">
 			<div class="col-4">
 				<img src="./images/1st.png" class="best">
@@ -80,11 +76,26 @@
 
 			</div>
 		</div><!--row for toponline,bestteacher,and bestprize-->
-
-		<div class="row">
+	</div>
+	<div class="container">
+		<div class="row position-relative mb-7">
 			<div class="col-7">
 				<!--placeholder for video -->
-				<img src="./images/play-icon.png" id="videos">
+				<div id="carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+					<li data-target="#carousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active" style="background-image:url('http://via.placeholder.com/250x150')"></div>
+
+					<div class="carousel-item" style="background-image:url('http://via.placeholder.com/250x150')">
+					</div>
+					<div class="carousel-item" style="background-image:url('http://via.placeholder.com/250x150')">
+					</div>
+				</div>
+			</div>
 				
 			</div>
 			<div class="col-5" id="vid-description">
@@ -102,7 +113,8 @@
 				</ul>
 			</div>
 		</div> <!--row for video and upcoming events -->
-
+	</div>
+	<div class="container">
 		<div class="row">
 			<div class="col-4">
 				<img src="./images/class-course-icon.png" class="teach">

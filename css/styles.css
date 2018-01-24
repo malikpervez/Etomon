@@ -3,6 +3,16 @@
     src: url(./fonts/champagne.ttf)
 }
 
+@font-face {
+    font-family: 'champagne-limo';
+    src: url(./fonts/champagne-limo.ttf)
+}
+
+@font-face {
+    font-family: 'myriad-pro';
+    src: url(./fonts/Myriad-Pro.ttf);
+}
+
 
 footer {
 	display: inline-flex;
@@ -31,6 +41,7 @@ footer {
 .carousel-inner,
 .carousel-item {
     height: 100%;
+    
 }
 .carousel-item {
     background: no-repeat center/cover;
@@ -62,7 +73,6 @@ footer {
   font-size: 10pt;
   float: left;
   color: #63717f;
-  padding-left: 45px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -73,8 +83,8 @@ footer {
 .container-1 .icon{
   position: absolute;
   top: 50%;
-  margin-left: 17px;
-  margin-top: 17px;
+  margin-left: 90%;
+  margin-top: 12px;
   z-index: 2;
   color: #4f5b66;
 }
@@ -135,6 +145,9 @@ footer {
 	background-color: blue;
 }
 
+#upcoming{
+    font-family: 'champagne-limo';
+}
 
 .mid-info {
 	margin-top: 50px;
@@ -162,6 +175,12 @@ footer {
 }
 .greyoverlay{
     background-color: #8080802b;
+    position: relative;
+    bottom: 18vh;
+}
+
+.greyoverlay h2{
+    font-family: 'champagne';
 }
 .best{
     max-width: 40%;
@@ -169,8 +188,16 @@ footer {
     margin: 0 auto;    
 }
 
+.vid-group{
+    position:relative;
+    bottom: 10vh;
+}
+
 #vid-description{
     margin-top: 50px;
+}
+#vid-description h1{
+    font-family: 'champagne-limo';
 }
 
 .events {
@@ -182,6 +209,8 @@ footer {
 #videos{
     width: 100%;
     height: 100%;
+    position: relative;
+    bottom: 10vh;
 }
 
 .teach{
