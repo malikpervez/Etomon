@@ -45,11 +45,11 @@ footer {
 }
 
 .logo {
-    height: 30vh;
-    width: 15vw;
+    height: 40vh;
+    width: 20vw;
     position: relative;
-    bottom: 100px;
-    right: 50px;
+    bottom: 110px;
+    right: 80px;
     z-index: 1;
 }
 
@@ -59,15 +59,15 @@ footer {
   white-space: nowrap;
   position: relative;
   left: 65vw;
-  bottom: 40vh;
+  bottom: 49vh;
 }
 
 .container-1 input#search{
   width: 300px;
-  height: 50px;
-  background: #e0f7fa;
+  height: 35px;
   border: none;
   font-size: 10pt;
+  padding-left: 10px;
   float: left;
   color: #63717f;
   -webkit-border-radius: 15px;
@@ -81,14 +81,13 @@ footer {
   position: absolute;
   top: 50%;
   margin-left: 90%;
-  margin-top: 12px;
+  margin-top: 4px;
   z-index: 2;
   color: #4f5b66;
 }
 
 #search {
 	position: relative;
-    
     z-index: 1;
 }
 
@@ -99,8 +98,8 @@ footer {
     font-family: 'champagne';
     opacity: .8;
     position: relative;
-    left:50vw;
-    bottom:10vh;
+    left:45vw;
+    bottom:16vh;
     z-index: 1;
     cursor:pointer;
     border:none;
@@ -118,8 +117,8 @@ footer {
     font-family: 'champagne';
     opacity: .8;
     position: relative;
-    left:55vw;
-    bottom:10vh;
+    left:54vw;
+    bottom:16vh;
     z-index: 1;
     cursor:pointer;
     border:none;
@@ -178,7 +177,7 @@ footer {
     font-family: 'champagne';
 }
 .best{
-    max-width: 40%;
+    max-width: 20%;
     display: block;
     margin: 0 auto;    
 }
@@ -199,10 +198,39 @@ footer {
 }
 
 .events {
-    margin-top: 10%;
-    height:50%;
+    height:30%;
     overflow-y: scroll;
 }
+
+.events::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+.events li{
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     padding-top: 3px;
+     padding-bottom: 10px;
+     margin-bottom: 10px;
+     border-bottom: 1px solid black;
+}
+
+#up-arrow{
+    position: relative;
+    margin-left: 135px;
+    height: 100px;
+    width:200px;
+}
+
+#down-arrow{
+    position: relative;
+    margin-left:135px;
+    height: 100px;
+    width:200px;
+}
+
+
 
 #videos{
    
@@ -218,5 +246,35 @@ footer {
 
 .bottom-half{
     position: relative;
-    bottom: 40vh;
+    bottom: 25vh;
+}
+
+.black-box{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    border-radius: 10px;
+}
+
+.dropdown-toggle {
+    color: #101010 !important;
+    background-color: #f2f3f3 !important;
+    border-color: #4e555b !important;
+}
+
+.about-contact{
+    margin-left: 10px;
+}
+
+#all-rights{
+    opacity: .8;
+}
+
+.date{
+    margin-right: 10px;
 }

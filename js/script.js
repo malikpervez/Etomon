@@ -6,13 +6,8 @@ $(document).ready(function(){
   	     slidesToScroll: 1,
          prevArrow:"<img class='a-left control-c prev slick-prev' src='./images/left-arrow.png'>",
          nextArrow:"<img class='a-right control-c next slick-next' src='./images/right-arrow.png'>"
-  	     
       });
     });
-//carousel function called 
-$('#myCarousel').carousel({
-  interval: 40000
-});
 
 //this function fethches the carousel element and cycles while binding this to the element.
 $('.carousel .item').each(function(){
@@ -32,3 +27,4 @@ $('.carousel .item').each(function(){
      
   }
 });
+
