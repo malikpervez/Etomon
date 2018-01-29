@@ -15,14 +15,14 @@
   width: 300px; }
 
 .btn-group img {
-  margin-right: 10px; }
+  margin-right: 50px; }
 
 .dropdown-toggle {
   padding-right: 50px; }
 
 .dropdown-toggle .glyphicon {
   margin-left: 20px;
-  margin-right: -40px; }
+  margin-right: -20px; }
 
 .dropdown-menu > li > a:hover {
   background: white; }
@@ -42,14 +42,29 @@
   max-width: 250px;
   height: 100vh; }
 
-.sidebar-header h3 {
+.sidebar-header h1 {
   display: inline;
-  border-bottom: 3px solid #e0f7fa; }
+  border-bottom: 3px solid #e0f7fa;
+  font-family: champagne-limo; }
 
 .nav-list {
   list-style-type: none;
-  padding-left: 5px;
+  padding-left: 5vw;
   margin-top: 5vh; }
+
+.nav-list li {
+  margin: 10px 0; }
+
+.nav-list li a {
+  color: black;
+  font-family: champagne-limo; }
+
+.checkbox-headers {
+  font-family: champagne-limo; }
+
+#cancel {
+  color: #7c0000;
+  margin-top: 25vh; }
 
 .about-contact {
   margin-left: 10px; }
