@@ -49,7 +49,6 @@ $primary-color : #e0f7fa;
         min-width: 250px;
         max-width: 250px;
         height: 100vh;
-        border: 1px solid pink;
 }
 
 .sidebar-header h3 {
@@ -61,4 +60,8 @@ $primary-color : #e0f7fa;
 	list-style-type: none;
 	padding-left: 5px;
 	margin-top: 5vh;
+}
+
+.about-contact{
+    margin-left: 10px;
 }

@@ -7,11 +7,11 @@
 </head>
 <body>
 	<div class="container-fluid" style="background-color: #e0f7fa">
-		<div class="d-flex flex-row" style="border:1px solid black;">
-			<div class="col d-flex justify-content-start" style="border:1px solid blue;">
+		<div class="d-flex flex-row">
+			<div class="col d-flex justify-content-start">
 				<img id="logo" src="./images/logo.png">
 			</div><!--logo -->
-			<div class="col d-flex align-items-center justify-content-end" style="border:1px solid red;">
+			<div class="col d-flex align-items-center justify-content-end">
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<img src="http://via.placeholder.com/50x50" style="border-radius: 50%;">
@@ -36,7 +36,9 @@
 			</div><!--dropdown for profile image,name and description -->
 		</div>
 	</div><!--container for header -->
-	<div class="container-fluid" style="border: 1px solid black">
+
+
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col flex-nowrap">
 				<nav id="sidebar">
@@ -57,9 +59,9 @@
 					<ul>Cancel Account</ul>
 				</nav>
 			</div>
-			<div class="col-9" style="border: 1px solid red;">
+			<div class="col-9">
 				<div class="row">
-					<div class="col-6" style="border: 1px solid black;">
+					<div class="col-6">
 						<h3>Send notifications via:</h3>
 						<br>
 						<div>
@@ -71,7 +73,7 @@
 							<label for "email-check">Email</label>
 						</div>
 					</div>
-					<div class="col-6" style="border: 1px solid black;">
+					<div class="col-6">
 						<h3>Recieve SMS messages via:</h3>
 						<br>
 						<div>
@@ -96,7 +98,7 @@
 						<h3>Send reminders and suggestions via:</h3>
 					</div>
 				</div>
-				<div class="row" style="border: 1px solid red;">
+				<div class="row">
 					<div class="col-4">
 						<input id="checkBox" type="checkbox" id="etomon-messages"><!--etomon messages -->
 						<label for "etomon-messages">Etomon Messages</label>
@@ -116,7 +118,7 @@
 						<h3>Send promotions and tips via:</h3>
 					</div>
 				</div>
-				<div class="row" style="border: 1px solid red;">
+				<div class="row">
 					<div class="col-4">
 						<input id="checkBox" type="checkbox" id="etomon-messages"><!--etomon messages -->
 						<label for "etomon-messages">Etomon Messages</label>
@@ -136,7 +138,7 @@
 						<h3>Send all the update information about policy,community, or courses via:</h3>
 					</div>
 				</div>
-				<div class="row" style="border: 1px solid red;">
+				<div class="row">
 					<div class="col-4">
 						<input id="checkBox" type="checkbox" id="etomon-messages"><!--etomon messages -->
 						<label for "etomon-messages">Etomon Messages</label>
@@ -157,11 +159,22 @@
 						<label for "teacher-calls">Recieve calls from teacher when necessary</label>
 					</div>
 				</div>
+
 			</div>
 		</div><!--parent row for emails and phone -->
 	</div><!--container for navbar and page content -->
 
-
+	<div class="container">
+		<div class="row">
+			<div class="col-8 d-flex justify-content-end">
+				<a class="about-contact"><strong>About our Site</strong></a>
+				<a class="about-contact"><strong>Contact Info</strong></a>
+			</div>
+			<div class="col-4 d-flex justify-content-center">
+				<a id="all-rights"><i>All Rights Reserved 2018</i></a>
+			</div>
+		</div>
+	</div><!--footer container-->
 
 
 
