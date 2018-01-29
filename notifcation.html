@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/notification.css">
+	<title></title>
+</head>
+<body>
+	<div class="container-fluid" style="background-color: #e0f7fa">
+		<div class="d-flex flex-row" style="border:1px solid black;">
+			<div class="col d-flex justify-content-start" style="border:1px solid blue;">
+				<img id="logo" src="./images/logo.png">
+			</div><!--logo -->
+			<div class="col d-flex align-items-center justify-content-end" style="border:1px solid red;">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="http://via.placeholder.com/50x50" style="border-radius: 50%;">
+						Name
+						<span class="glyphicon glyphicon-chevron-down"></span>
+					</button>
+
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">Member name (you)</li>
+						<li>
+							<a href="#" title="Select this card"><img src="http://via.placeholder.com/50x50">Name</a>
+						</li>
+						<li>
+							<a href="#" title="Select this card"><img src="http://via.placeholder.com/50x50">0123 4567 8912 3456</a>
+						</li>
+						<li class="dropdown-header">Member name</li>
+						<li>
+							<a href="#" title="Select this card"><img src="http://via.placeholder.com/50x50">0123 4567 8912 3456</a>
+						</li>
+					</ul>
+				</div>
+			</div><!--dropdown for profile image,name and description -->
+		</div>
+	</div><!--container for header -->
+	<div class="container-fluid" style="border: 1px solid black">
+		<div class="row">
+			<div class="col flex-nowrap">
+				<nav id="sidebar">
+				<!-- Sidebar Header -->
+				<div class="sidebar-header">
+					<h3>Notification</h3>
+				</div>
+					<!-- Sidebar Links -->
+					<ul class="nav-list">
+						<li class="active"><a href="#">Edit Profile</a></li>
+						<li><a href="#">Privacy & Security</a></li>
+						<li><a href="#">Payment Setting</a></li>
+						<li><a href="#">Transaction History</a></li>
+						<li><a href="#">Trust & Verfication</a></li>
+						<li><a href="#">My Education Blog</a></li>
+						<li><a href="#">Promotions</a></li>
+					</ul>
+					<ul>Cancel Account</ul>
+				</nav>
+			</div>
+			<div class="col-9" style="border: 1px solid red;">
+				<div class="row">
+					<div class="col-6" style="border: 1px solid black;">
+						<h3>Send notifications via:</h3>
+						<br>
+						<div>
+							<input id="checkBox" type="checkbox" id="etomon-messages"><!--etomon messages -->
+							<label for "etomon-messages">Etomon Messages</label>
+						</div>
+						<div>
+							<input id="checkBox" type="checkbox" id="email-check"><!--etomon messages -->
+							<label for "email-check">Email</label>
+						</div>
+					</div>
+					<div class="col-6" style="border: 1px solid black;">
+						<h3>Recieve SMS messages via:</h3>
+						<br>
+						<div>
+							<label for="phone1">
+								<input type="checkbox" id="name3activaitor" onclick="if(this.checked){ document.getElementById('phone1').focus();}" />
+								Phone #1
+							</label>
+							<input type="text" id="phone1" name="phone1" />
+						</div>
+						<div>
+							<label for="phone2">
+								<input type="checkbox" id="name3activaitor" onclick="if(this.checked){ document.getElementById('phone2').focus();}" />
+								Phone #2
+							</label>
+							<input type="text" id="phone2" name="phone2" />
+						</div>
+					</div>
+				</div><!-- nested rows for notifcations via email,phone, and etomon messages -->
+
+				<div class="row">
+					<div class="col-12">
+						<h3>Send reminders and suggestions via:</h3>
+					</div>
+				</div>
+				<div class="row" style="border: 1px solid red;">
+					<div class="col-4">
+						<input id="checkBox" type="checkbox" id="etomon-messages"><!--etomon messages -->
+						<label for "etomon-messages">Etomon Messages</label>
+					</div>	
+					<div class="col-4">
+						<input id="checkBox" type="checkbox" id="email2"><!--etomon messages -->
+						<label for "email2">Email</label>
+					</div>
+					<div class="col-4">
+						<input id="checkBox" type="checkbox" id="phone3"><!--etomon messages -->
+						<label for "phone3">Text Messages</label>
+					</div>
+				</div> <!--reminders and suggestions checkboxes -->
+
+				<div class="row">
+					<div class="col-12">
+						<h3>Send promotions and tips via:</h3>
+					</div>
+				</div>
+				<div class="row" style="border: 1px solid red;">
+					<div class="col-4">
+						<input id="checkBox" type="checkbox" id="etomon-messages"><!--etomon messages -->
+						<label for "etomon-messages">Etomon Messages</label>
+					</div>	
+					<div class="col-4">
+						<input id="checkBox" type="checkbox" id="email3"><!--etomon messages -->
+						<label for "email3">Email</label>
+					</div>
+					<div class="col-4">
+						<input id="checkBox" type="checkbox" id="phone4"><!--etomon messages -->
+						<label for "phone4">Text Messages</label>
+					</div>
+				</div><!--promotions and tips checkboxes-->
+
+				<div class="row">
+					<div class="col-12">
+						<h3>Send all the update information about policy,community, or courses via:</h3>
+					</div>
+				</div>
+				<div class="row" style="border: 1px solid red;">
+					<div class="col-4">
+						<input id="checkBox" type="checkbox" id="etomon-messages"><!--etomon messages -->
+						<label for "etomon-messages">Etomon Messages</label>
+					</div>	
+					<div class="col-4">
+						<input id="checkBox" type="checkbox" id="email4"><!--etomon messages -->
+						<label for "email4">Email</label>
+					</div>
+					<div class="col-4">
+						<input id="checkBox" type="checkbox" id="phone5"><!--etomon messages -->
+						<label for "phone5">Text Messages</label>
+					</div>
+				</div><!--send updates for policy and community checkboxes-->
+
+				<div class="row">
+					<div class="col-12">
+						<input id="checkBox" type="checkbox" id="teacher-calls"><!--etomon messages -->
+						<label for "teacher-calls">Recieve calls from teacher when necessary</label>
+					</div>
+				</div>
+			</div>
+		</div><!--parent row for emails and phone -->
+	</div><!--container for navbar and page content -->
+
+
+
+
+
+
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+</body>
+</html>
