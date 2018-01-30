@@ -32,8 +32,8 @@
 							<a href="#" title="Select this card"><img src="http://via.placeholder.com/50x50">0123 4567 8912 3456</a>
 						</li>
 					</ul>
-				</div>
-			</div><!--dropdown for profile image,name and description -->
+				</div><!--dropdown for profile image,name and description -->
+			</div>
 		</div>
 	</div><!--container for header -->
 
@@ -64,31 +64,35 @@
 					<div class="col-6">
 						<h3 class="checkbox-headers">Send notifications via:</h3>
 						<br>
-						<div class=>
-							<input id="checkBox" type="checkbox" id="etomon-messages"><!--etomon messages -->
-							<label for "etomon-messages"><strong>Etomon Messages</strong></label>
-						</div>
-						<div class="mt-4">
-							<input id="checkBox" type="checkbox" id="email-check"><!--etomon messages -->
-							<label for "email-check"><strong>Email</strong></label>
-						</div>
+						<label class="check-box-container">Etomon Messages
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+						<label class="check-box-container">Email
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
 					</div>
 					<div class="col-6">
 						<h3 class="checkbox-headers">Recieve SMS messages via:</h3>
 						<br>
-						<div class=>
-							<label for="phone1">
-								<input type="checkbox" id="name3activaitor" onclick="if(this.checked){ document.getElementById('phone1').focus();}" />
-								<strong>Phone #1</strong>
+						<div style="display:inline-flex;">
+							<label class="check-box-container">Phone #1
+  								<input type="checkbox">
+  								<span class="checkmark"></span>
 							</label>
-							<input type="text" id="phone1" name="phone1" />
+							<label for "phone1">
+								<input type="text" id="phone1" name="phone1" />
+							</label>
 						</div>
-						<div class="mt-4">
-							<label for="phone2">
-								<input type="checkbox" id="name3activaitor" onclick="if(this.checked){ document.getElementById('phone2').focus();}" />
-								<strong>Phone #2</strong>
+						<div style="display:inline-flex;">
+							<label class="check-box-container">Phone #2
+  								<input type="checkbox">
+  								<span class="checkmark"></span>
 							</label>
-							<input type="text" id="phone2" name="phone2" />
+							<label for "phone2">
+								<input type="text" id="phone2" name="phone2" />
+							</label>
 						</div>
 					</div>
 				</div><!-- nested rows for notifcations via email,phone, and etomon messages -->
@@ -99,17 +103,23 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-4 mt-2">
-						<input id="checkBox" type="checkbox" id="etomon-messages"><!--etomon messages -->
-						<label for "etomon-messages"><strong>Etomon Messages</strong></label>
+					<div class="col-4">
+						<label class="check-box-container">Etomon Messages
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
 					</div>	
-					<div class="col-4 mt-2">
-						<input id="checkBox" type="checkbox" id="email2"><!--etomon messages -->
-						<label for "email2"><strong>Email</strong></label>
+					<div class="col-4">
+						<label class="check-box-container">Email
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
 					</div>
-					<div class="col-4 mt-2">
-						<input id="checkBox" type="checkbox" id="phone3"><!--etomon messages -->
-						<label for "phone3"><strong>Text Messages</strong></label>
+					<div class="col-4">
+						<label class="check-box-container">Text Messages
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
 					</div>
 				</div> <!--reminders and suggestions checkboxes -->
 
@@ -119,37 +129,49 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-4 mt-2">
-						<input id="checkBox" type="checkbox" id="etomon-messages"><!--etomon messages -->
-						<label for "etomon-messages"><strong>Etomon Messages</strong></label>
+					<div class="col-4">
+						<label class="check-box-container">Etomon Messages
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
 					</div>	
-					<div class="col-4 mt-2">
-						<input id="checkBox" type="checkbox" id="email3"><!--etomon messages -->
-						<label for "email3"><strong>Email</strong></label>
+					<div class="col-4">
+						<label class="check-box-container">Email
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
 					</div>
-					<div class="col-4 mt-2">
-						<input id="checkBox" type="checkbox" id="phone4"><!--etomon messages -->
-						<label for "phone4"><strong>Text Messages</strong></label>
+					<div class="col-4">
+						<label class="check-box-container">Text Messages
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
 					</div>
 				</div><!--promotions and tips checkboxes-->
 
 				<div class="row">
 					<div class="col-12 mt-2">
-						<h3 class="checkbox-headers">Send all the update information about policy,community, or courses via:</h3>
+						<h3 class="checkbox-headers">Send all the update information about policy, community, or courses via:</h3>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-4 mt-2">
-						<input id="checkBox" type="checkbox" id="etomon-messages"><!--etomon messages -->
-						<label for "etomon-messages"><strong>Etomon Messages</strong></label>
+					<div class="col-4">
+						<label class="check-box-container">Etomon Messages
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
 					</div>	
-					<div class="col-4 mt-2">
-						<input id="checkBox" type="checkbox" id="email4"><!--etomon messages -->
-						<label for "email4"><strong>Email</strong></label>
+					<div class="col-4">
+						<label class="check-box-container">Email
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
 					</div>
-					<div class="col-4 mt-2">
-						<input id="checkBox" type="checkbox" id="phone5"><!--etomon messages -->
-						<label for "phone5"><strong>Text Messages</strong></label>
+					<div class="col-4">
+						<label class="check-box-container">Text Messages
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
 					</div>
 				</div><!--send updates for policy and community checkboxes-->
 
