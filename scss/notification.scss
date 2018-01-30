@@ -20,11 +20,15 @@ $primary-color : #e0f7fa;
   height: 40vh;
   width: 20vw;
  }
+
 .dropdown-toggle, .dropdown-menu {
   width: 300px; }
 
+.btn-group{
+	margin-left: 5vw;
+}
 .btn-group img {
-  margin-right: 50px; }
+  margin-right: 110px; }
 
 .dropdown-toggle {
   padding-right: 50px; }
@@ -67,7 +71,7 @@ $primary-color : #e0f7fa;
 }
 
 .nav-list li{
-	margin: 10px 0;
+	margin: 20px 0;
 }
 
 .nav-list li a {
@@ -94,7 +98,7 @@ $primary-color : #e0f7fa;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 15px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -111,7 +115,7 @@ $primary-color : #e0f7fa;
 /* Create a custom checkbox */
 .checkmark {
     position: absolute;
-    top: 11px;
+    top: 5px;
     left: 0;
     height: 15px;
     width: 15px;
@@ -152,4 +156,14 @@ $primary-color : #e0f7fa;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+input#phone1{
+	margin-left: 10px;
+	border-radius: 10px;
+}
+
+input#phone2{
+	margin-left: 10px;
+	border-radius: 10px;
 }
