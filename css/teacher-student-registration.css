@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'champagne';
+  src: url(./fonts/champagne.ttf); }
+@font-face {
+  font-family: 'champagne-limo';
+  src: url(./fonts/champagne-limo.ttf); }
+@font-face {
+  font-family: 'myriad-pro';
+  src: url(./fonts/Myriad-Pro.ttf); }
+#logo {
+  height: 40vh;
+  width: 20vw;
+  position: relative; }
+
+.btn-primary {
+  color: #000;
+  background-color: #e0f7fa;
+  border-color: #747677;
+  font-family: "champagne-limo";
+  font-size: 18pt; }
+
+.container-1 {
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  bottom: 2.5em; }
+
+.container-1 input#search {
+  width: 300px;
+  height: 35px;
+  border: none;
+  font-size: 10pt;
+  padding-left: 10px;
+  float: left;
+  color: #63717f;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  opacity: .8;
+  z-index: 1; }
+
+.container-1 .icon {
+  position: absolute;
+  top: 50%;
+  margin-left: 90%;
+  margin-top: 4px;
+  z-index: 2;
+  color: #4f5b66; }
+
+#search {
+  position: relative;
+  z-index: 1; }
+
+#signup {
+  background: url(../images/sign-up.png) no-repeat;
+  background-size: contain;
+  background-color: #e0f7fa;
+  font-family: 'champagne';
+  opacity: .8;
+  position: relative;
+  height: 5vh;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px; }
+
+#signup-icon {
+  margin-left: 30px; }
+
+#signin {
+  background: url(../images/sign-in.png) no-repeat;
+  background-size: contain;
+  font-family: 'champagne';
+  opacity: .8;
+  position: relative;
+  height: 5vh;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px; }
+
+#signin:hover {
+  background-color: #e0f7fa; }
+
+#signin-icon {
+  margin-left: 30px; }
+
+/*# sourceMappingURL=teacher-student-registration.css.map */
