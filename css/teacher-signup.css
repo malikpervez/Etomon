@@ -86,6 +86,9 @@
 #signin-icon {
   margin-left: 30px; }
 
+.about-contact {
+  margin-left: 10px; }
+
 .check-box-container {
   display: block;
   position: relative;
@@ -216,8 +219,4 @@
 #terms {
   font-family: "champagne-limo"; }
 
-#email {
-  font-family: "champagne-limo";
-  border-bottom: 5px solid #e0f7fa; }
-
-/*# sourceMappingURL=signup.css.map */
+/*# sourceMappingURL=teacher-signup.css.map */

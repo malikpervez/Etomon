@@ -2,61 +2,10 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/signup.css">
+	<link rel="stylesheet" type="text/css" href="./css/teacher-signup.css">
 	<title></title>
 </head>
 <body>
-
-	<!-- modal -->
-	<div class="modal fade" id="myModal">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="container-fluid">
-						<!--header -->
-						<div class="row">
-							<div class="col-6">
-								<h3 id="terms">Terms & Conditions</h3>
-							</div>
-							<div class="col-6 d-flex justify-content-center">
-								<h3 id="email">Email Verification & Sign Up</h3>
-							</div>
-						</div>
-						<!--modal content -->
-						<div class="row">
-							<div class="col-6">
-								<div class="row mt-5">
-									<div class="col-12">
-										<h5>select pictures that have road signs</h5>
-									</div>
-								</div>
-								<div class="row">
-									<div class="row">
-										<div class="col-3"><img style="height:125px; width:78px; border-radius: 10px;" src="./images/black.png"></div>
-										<div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
-										<div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
-										<div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
-									</div>
-									<div class="row mt-2">
-										<div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
-										<div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
-										<div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
-										<div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="row"></div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
 
 	<!-- logo,signup, and search -->
 
@@ -81,8 +30,6 @@
 			</div>
 		</div>
 	</div>
-
-	
 
 
 	<!--page content -->
@@ -164,6 +111,26 @@
                 </div>
 
                 <div class="form-group row">
+                    <label for="language" class="col-sm-6 col-form-label">Language</label>
+                    <div class="col-sm-6">
+                        <select style="width: 150px" name="language" class="custom-select-sm form-radius" class="langauge">
+                            <option value="">English</option>  
+                        </select>
+                        <img src="./images/plus_icon.png" id="plus-icon">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="degree" class="col-sm-6 col-form-label">Degree</label>
+                    <div class="col-sm-6">
+                        <select style="width: 150px" name="degree" class="custom-select-sm form-radius" class="degree">
+                            <option value="">some content</option>  
+                        </select>
+                        <img src="./images/plus_icon.png" id="plus-icon">
+                    </div>
+                </div>
+
+                <div class="form-group row">
                     <label for="fieldstudy" class="col-sm-6 col-form-label">Field of Study:</label>
                     <div class="col-sm-6">
                         <select style="width: 150px" name="fieldstudy" class="custom-select-sm form-radius" class="month/year">
@@ -174,25 +141,55 @@
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-6"><!--right side -->
                 <div class="form-group row">
-                    <label for="email" class="col-sm-6 col-form-label">Email Address</label>
+                    <label for="fieldstudy" class="col-sm-6 col-form-label">Country</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control-sm form-radius" id="email" value="email@example.com">
+                        <select style="width: 150px" name="fieldstudy" class="custom-select-sm form-radius" class="month/year">
+                            <option value="">United States</option>  
+                        </select>
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="password" class="col-sm-6 col-form-label">Password</label>
+                    <label for="address" class="col-sm-6 col-form-label">Address</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control-sm form-radius" id="address" value="">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="city" class="col-sm-6 col-form-label">City</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control-sm form-radius" id="city" value="">
+                    </div>
+                </div>
+                <div class="form-group row"> <!--needs fixing -->
+                    <div class="col-sm-6">
+                    	<label for="state" class="col-sm-6 col-form-label">State</label>
+                        <input type="text" class="form-control-sm form-radius" id="state" value="">
+                    </div>
+                    <div class="col-sm-6">
+                    	<label for= "zipcode" class="col-sm-6 col-form-label">Zip</label>
+                        <input type="text" class="form-control-sm form-radius" id="zipcode" value="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                	<label for="state" class="col-sm-6 col-form-label">Email</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control-sm form-radius" id="email" value="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                	<label for="state" class="col-sm-6 col-form-label">Password</label>
                     <div class="col-sm-6">
                         <input type="password" class="form-control-sm form-radius" id="password" value="">
                     </div>
                 </div>
-
                 <div class="form-group row">
-                    <label for="password2" class="col-sm-6 col-form-label">Re-enter Password</label>
+                	<label for="state" class="col-sm-6 col-form-label"> Re-enter Password</label>
                     <div class="col-sm-6">
-                        <input type="password" class="form-control-sm form-radius" id="password2" value="">
+                        <input type="password" class="form-control-sm form-radius" id="password" value="">
                     </div>
                 </div>
                 <div class="row">
@@ -220,8 +217,9 @@
 	</div>
 
 
-	<!--footer container-->
-	<div class="container mt-5">
+
+	<!-- footer container-->
+	<div class="container mt-5 ">
 		<div class="row">
 			<div class="col-8 d-flex justify-content-end">
 				<a class="about-contact pr-3"><strong>About our Site</strong></a>
@@ -233,14 +231,11 @@
 		</div>
 	</div>
 
-
-
 <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./js/signup.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </body>
 </html>
