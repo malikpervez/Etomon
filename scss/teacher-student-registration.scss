@@ -118,7 +118,7 @@ $primary-color : #e0f7fa;
 .teacher-student {
   display: block;
   width: 100%;
-  height: auto;
+  height: 75vh;
   border-radius: 10px;
 }
 
@@ -142,7 +142,7 @@ $primary-color : #e0f7fa;
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -151,6 +151,16 @@ $primary-color : #e0f7fa;
   text-align: center;
 }
 
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 .about-contact{
     margin-left: 10px;
