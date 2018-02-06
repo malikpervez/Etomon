@@ -1,1 +1,3 @@
-$('#myModal').modal()
+$('#myModal').modal({
+	show: true
+})
