@@ -7,6 +7,63 @@
 </head>
 <body>
 
+    <!-- modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <!--header -->
+                        <div class="row">
+                            <div class="col-6">
+                                <h3 id="terms">Terms & Conditions</h3>
+                            </div>
+                            <div class="col-6 d-flex justify-content-center">
+                                <h3 id="email">Email Verification & Sign Up</h3>
+                            </div>
+                        </div>
+                        <!--modal content -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <h5>select pictures that have road signs</h5>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="col-3"><img style="height:125px; width:78px; border-radius: 10px;" src="./images/black.png"></div>
+                                        <div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
+                                        <div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
+                                        <div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
+                                        <div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
+                                        <div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
+                                        <div class="col-3"><img style="height:125px; width:75px; border-radius: 10px;" src="./images/black.png"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <button class="btn btn-primary ml-5 mt-2">Send me a verification code</button>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./images/mail_icon.png" id="mail-icon">
+                                    </div>                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 	<!-- logo,signup, and search -->
 
 	<div class="container-fluid" style="background-color: #e0f7fa;">
@@ -112,31 +169,31 @@
 
                 <div class="form-group row">
                     <label for="language" class="col-sm-6 col-form-label">Language</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" id="addlanguage">
                         <select style="width: 150px" name="language" class="custom-select-sm form-radius" class="langauge">
                             <option value="">English</option>  
                         </select>
-                        <img src="./images/plus_icon.png" id="plus-icon">
+                        <img src="./images/plus_icon.png" class="plus-icon" id="add-lang-button">
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label for="degree" class="col-sm-6 col-form-label">Degree</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" id="add-degree">
                         <select style="width: 150px" name="degree" class="custom-select-sm form-radius" class="degree">
                             <option value="">some content</option>  
                         </select>
-                        <img src="./images/plus_icon.png" id="plus-icon">
+                        <img src="./images/plus_icon.png" class="plus-icon" id="add-degree-button">
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label for="fieldstudy" class="col-sm-6 col-form-label">Field of Study:</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" id="add-field">
                         <select style="width: 150px" name="fieldstudy" class="custom-select-sm form-radius" class="month/year">
                             <option value="">Some Content</option>  
                         </select>
-                        <img src="./images/plus_icon.png" id="plus-icon">
+                        <img src="./images/plus_icon.png" class="plus-icon" id="add-field-button">
                     </div>
                 </div>
             </div>
@@ -165,12 +222,12 @@
                     </div>
                 </div>
                 <div class="form-group row"> <!--needs fixing -->
+                    <label for="state" class="col-sm-6 col-form-label">State</label>
                     <div class="col-sm-6">
-                    	<label for="state" class="col-sm-6 col-form-label">State</label>
                         <input type="text" class="form-control-sm form-radius" id="state" value="">
                     </div>
+                    <label for= "zipcode" class="col-sm-6 col-form-label">Zip</label>
                     <div class="col-sm-6">
-                    	<label for= "zipcode" class="col-sm-6 col-form-label">Zip</label>
                         <input type="text" class="form-control-sm form-radius" id="zipcode" value="">
                     </div>
                 </div>
@@ -190,6 +247,14 @@
                 	<label for="state" class="col-sm-6 col-form-label"> Re-enter Password</label>
                     <div class="col-sm-6">
                         <input type="password" class="form-control-sm form-radius" id="password" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                           
+                    </div>
+                    <div class="col-sm-6">
+                        
                     </div>
                 </div>
                 <div class="row">
@@ -236,6 +301,8 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/add-drop.js"></script>
+<script type="text/javascript" src="./js/signup.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </body>
 </html>

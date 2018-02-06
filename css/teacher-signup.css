@@ -208,7 +208,7 @@
   height: 2rem;
   width: 2rem; }
 
-#plus-icon {
+.plus-icon {
   height: 1rem;
   width: 1rem;
   margin-left: 1.5rem; }
@@ -218,5 +218,9 @@
 
 #terms {
   font-family: "champagne-limo"; }
+
+#mail-icon {
+  height: 50vh;
+  width: 100%; }
 
 /*# sourceMappingURL=teacher-signup.css.map */
