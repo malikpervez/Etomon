@@ -101,7 +101,7 @@
 	<!--page content -->
 	<div class="container">
 		<div class="d-flex flex-row mt-5 mb-5">
-				<h2 style="font-family: 'champagne-limo';" class="">General Information:</h3>
+				<h2 style="font-family: 'champagne-limo';" class="">General Information:</h2>
 		</div> <!--teacher-student checkboxes -->
 
 		<form>
@@ -253,17 +253,23 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                	<label for="state" class="col-sm-6 col-form-label"> Re-enter Password</label>
+                	<label for="state" class="col-sm-6 col-form-label">Re-enter Password</label>
                     <div class="col-sm-6">
                         <input type="password" class="form-control-sm form-radius" id="password" value="">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6">
-                           
+                    <div class="col-12">
+                         <div>
+                            <label for="image_uploads">Choose images to upload (PNG,JPG)</label>
+                            <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple>
+                        </div>
+                    <div class="preview">
+                        <p>No files currently selected for upload</p>
                     </div>
-                    <div class="col-sm-6">
-                        
+                    <div>
+                        <button>Submit</button>
+                    </div>
                     </div>
                 </div>
                 <div class="row">
@@ -282,12 +288,12 @@
                 </div>
             </div><!--right side -->
         </div><!-- form for teacher/student-->
-    </form> 
-    <div class="flex-row">
-    	<div class="col-12 d-flex justify-content-end">
-    		<button class="btn btn-primary mr-3" data-toggle="modal" data-target="#myModal">Next</button>
-    	</div>
-    </div>
+        </form> 
+        <div class="flex-row">
+        	<div class="col-12 d-flex justify-content-end">
+        		<button class="btn btn-primary mr-3" data-toggle="modal" data-target="#myModal">Next</button>
+        	</div>
+        </div>
 	</div>
 
 

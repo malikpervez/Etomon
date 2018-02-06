@@ -268,7 +268,7 @@ $primary-color : #e0f7fa;
   height: 50%;
   width: 50%;
 }
-
+//style for delete button
 .delete-button {
   border: none;
   padding: 0;
@@ -276,7 +276,8 @@ $primary-color : #e0f7fa;
   color: red;
   margin-left: 20px;
 }
-
+//the wrapper for the fields added by the plus icon
 .fieldwrapper{
   margin-top: 10px;
 }
+
