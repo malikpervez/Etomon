@@ -265,6 +265,18 @@ $primary-color : #e0f7fa;
 }
 
 #mail-icon{
-  height: 50vh;
-  width: 100%;
+  height: 50%;
+  width: 50%;
+}
+
+.delete-button {
+  border: none;
+  padding: 0;
+  background: none;
+  color: red;
+  margin-left: 20px;
+}
+
+.fieldwrapper{
+  margin-top: 10px;
 }

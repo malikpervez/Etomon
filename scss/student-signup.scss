@@ -246,7 +246,7 @@ $primary-color : #e0f7fa;
 	
 }
 
-#plus-icon{
+.plus-icon{
 	height: 1rem;
 	width: 1rem;
 	margin-left: 1.5rem;
@@ -262,10 +262,17 @@ $primary-color : #e0f7fa;
 
 #email{
 	font-family: "champagne-limo";
-	border-bottom: 5px solid $primary-color;
 }
 
 #mail-icon{
-  height: 50%;
-  width: 50%;
+  height: 60%;
+  width: 40%;
+}
+
+.delete-button {
+  border: none;
+  padding: 0;
+  background: none;
+  color: red;
+  margin-left: 20px;
 }

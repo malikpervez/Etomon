@@ -205,7 +205,7 @@
   height: 2rem;
   width: 2rem; }
 
-#plus-icon {
+.plus-icon {
   height: 1rem;
   width: 1rem;
   margin-left: 1.5rem; }
@@ -217,11 +217,17 @@
   font-family: "champagne-limo"; }
 
 #email {
-  font-family: "champagne-limo";
-  border-bottom: 5px solid #e0f7fa; }
+  font-family: "champagne-limo"; }
 
 #mail-icon {
-  height: 50%;
-  width: 50%; }
+  height: 60%;
+  width: 40%; }
+
+.delete-button {
+  border: none;
+  padding: 0;
+  background: none;
+  color: red;
+  margin-left: 20px; }
 
 /*# sourceMappingURL=student-signup.css.map */

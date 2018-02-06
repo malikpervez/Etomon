@@ -220,7 +220,17 @@
   font-family: "champagne-limo"; }
 
 #mail-icon {
-  height: 50vh;
-  width: 100%; }
+  height: 50%;
+  width: 50%; }
+
+.delete-button {
+  border: none;
+  padding: 0;
+  background: none;
+  color: red;
+  margin-left: 20px; }
+
+.fieldwrapper {
+  margin-top: 10px; }
 
 /*# sourceMappingURL=teacher-signup.css.map */

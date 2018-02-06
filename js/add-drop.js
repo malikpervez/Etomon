@@ -5,8 +5,8 @@ $(document).ready(function() {
         var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
         var fieldWrapper = $("<div class=\"fieldwrapper custom-select-sm form-radius\" id=\"field" + intId + "\"/>");
         fieldWrapper.data("idx", intId);
-        var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">English</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
-        var removeButton = $("<input type=\"button\" class=\"remove\" value=\"delete\" />");
+        var fType = $("<select style=\"height: 29px; width: 151px;\" class=\"fieldtype form-radius\"><option value=\"checkbox\">English</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
+        var removeButton = $("<input type=\"button\" class=\"remove delete-button\" value=\"Delete\" />");
         removeButton.click(function() {
             $(this).parent().remove();
         });
@@ -20,8 +20,8 @@ $(document).ready(function() {
         var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
         var fieldWrapper = $("<div class=\"fieldwrapper custom-select-sm form-radius\" id=\"field" + intId + "\"/>");
         fieldWrapper.data("idx", intId);
-        var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">English</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
-        var removeButton = $("<input type=\"button\" class=\"remove\" value=\"delete\" />");
+        var fType = $("<select style=\"height: 29px; width: 151px;\" class=\"fieldtype form-radius\"><option value=\"checkbox\">English</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
+        var removeButton = $("<input type=\"button\" class=\"remove delete-button\" value=\"Delete\" />");
         removeButton.click(function() {
             $(this).parent().remove();
         });
@@ -35,8 +35,8 @@ $(document).ready(function() {
         var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
         var fieldWrapper = $("<div class=\"fieldwrapper custom-select-sm form-radius\" id=\"field" + intId + "\"/>");
         fieldWrapper.data("idx", intId);
-        var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">English</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
-        var removeButton = $("<input type=\"button\" class=\"remove\" value=\"delete\" />");
+        var fType = $("<select style=\"height: 29px; width: 151px;\" class=\"fieldtype form-radius\"><option value=\"text\">English</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
+        var removeButton = $("<input type=\"button\" class=\"remove delete-button\" value=\"Delete\" />");
         removeButton.click(function() {
             $(this).parent().remove();
         });
