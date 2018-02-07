@@ -47,9 +47,12 @@ $primary-color : #e0f7fa;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 10px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px; 
+}
+//above code is for header 
 
-  #sidebar {
+
+#sidebar {
         min-width: 250px;
         max-width: 250px;
         height: 100vh;
@@ -61,7 +64,35 @@ $primary-color : #e0f7fa;
 	font-family: champagne-limo;
 }
 
-//above code is for header 
+.nav-list{
+	list-style-type: none;
+	padding-left: 5vw;
+	margin-top: 5vh;
+
+}
+
+.nav-list li{
+	margin: 14px 0;
+}
+
+.nav-list li a {
+	color: black;
+	font-family: champagne-limo;
+	font-size: 18pt;
+}
+
+#cancel{
+	color: #7c0000;
+	margin-top: 42vh;
+	font-family: "champagne-limo";
+}
+
+
+#prof-pic{
+	height: 50px;
+	width: 50px;
+}
+
 .about-contact{
     margin-left: 10px;
 }

@@ -50,6 +50,28 @@
   border-bottom: 3px solid #e0f7fa;
   font-family: champagne-limo; }
 
+.nav-list {
+  list-style-type: none;
+  padding-left: 5vw;
+  margin-top: 5vh; }
+
+.nav-list li {
+  margin: 14px 0; }
+
+.nav-list li a {
+  color: black;
+  font-family: champagne-limo;
+  font-size: 18pt; }
+
+#cancel {
+  color: #7c0000;
+  margin-top: 42vh;
+  font-family: "champagne-limo"; }
+
+#prof-pic {
+  height: 50px;
+  width: 50px; }
+
 .about-contact {
   margin-left: 10px; }
 
