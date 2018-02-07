@@ -75,4 +75,16 @@
 .about-contact {
   margin-left: 10px; }
 
+#profile-description {
+  background-color: #e0f7fa; }
+
+#social-media-container {
+  background-color: white; }
+
+.social-connect {
+  width: 25vw;
+  border-radius: 10px;
+  font-size: 10px;
+  padding-left: 10px; }
+
 /*# sourceMappingURL=teacher-edit-profile.css.map */

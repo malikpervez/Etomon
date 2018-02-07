@@ -43,11 +43,11 @@
 	<div class="container-fluid mt-4">
 		<!--sidebar-->
 		<div class="row">
-			<div class="col-4 flex-nowrap">
+			<div class="col-3 flex-nowrap">
 				<nav id="sidebar">
 				<!-- Sidebar Header -->
 				<div class="sidebar-header text-center">
-					<h1 id="notification">Notification</h1>
+					<h1 id="notification">Edit Profile</h1>
 				</div>
 					<!-- Sidebar Links -->
 					<ul class="nav-list">
@@ -62,10 +62,12 @@
 					<ul id="cancel"><a><strong>Cancel Account</strong></a></ul>
 				</nav>
 			</div>
-			<div class="col-8">
+
+			<!--this takes up the right side of the page with a col-8 as a container-->
+			<div class="col-9">
 				<div class="row">
 					<div class="col-6" style="border: 1px solid red;">
-						<div class="row">
+						<div class="row mt-2">
 							<div class="col-sm-6">
 								<img src="./images/stock-thumbnail.png" style="border-radius: 50%" id="prof-pic">
 							</div>
@@ -74,10 +76,41 @@
 							</div>
 						</div>
 						<div class="row">
-							
+							<!--for edit profile -->
 						</div>
 					</div>
-					<div class="col-6" style="border: 1px solid blue;"></div>
+					<div class="col-6"  id="profile-description" style="border: 1px solid blue;">
+						<div class="row">
+							<div class="col-sm-12">
+								<textarea class="mt-2" style="border-radius: 10px;" rows="4" cols="50" placeholder="Write Something About You"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<!--social media connect -->
+							<div class="col-sm-12">
+								<div class="form-group row ml-2">
+									<img class="social-icons" style="height:25px; width: 25px;" src="./images/facebook_icon.png">
+									<input class="social-connect ml-2"  type="text" name="facebook" placeholder="Linkedin URL">
+								</div>
+								<div class="form-group row ml-2">
+									<img class="social-icons" style="height:25px; width: 25px;" src="./images/likedin_icon.png">
+									<input class="social-connect ml-2"  type="text" name="facebook" placeholder="LinkedIn URL">
+								</div>
+								<div class="form-group row ml-2">
+									<img class="social-icons" style="height:25px; width: 25px;" src="./images/Gmail_icon.png">
+									<input class="social-connect ml-2"  type="text" name="facebook" placeholder="Gmail URL">
+								</div>
+								<div class="form-group row ml-2">
+									<img class="social-icons" style="height:25px; width: 25px;" src="./images/facebook_icon.png">
+									<input class="social-connect ml-2"  type="text" name="facebook" placeholder="Personal Website URL">
+								</div>
+								<div class="form-group row ml-2">
+									<img class="social-icons" style="height:25px; width: 25px;" src="./images/Wechat_icon.png">
+									<input class="social-connect ml-2"  type="text" name="facebook" placeholder="Mobile Number or Email">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="row" style="border: 1px solid orange"></div>
 			</div>
