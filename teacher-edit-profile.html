@@ -3,6 +3,8 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/teacher-edit-profile.css">
+	<link rel="stylesheet" type="text/css" href="./css/slick.css">
+	<link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
 	<title></title>
 </head>
 <body>
@@ -66,7 +68,7 @@
 			<!--this takes up the right side of the page with a col-8 as a container-->
 			<div class="col-9">
 				<div class="row">
-					<div class="col-6" style="border: 1px solid red;">
+					<div class="col-6" style="border: 1px solid gray;">
 						<div class="row mt-2">
 							<div class="col-sm-6">
 								<img src="./images/stock-thumbnail.png" style="border-radius: 50%" id="prof-pic">
@@ -75,44 +77,115 @@
 								<a style="font-size: 20px; font-family: 'champagne-limo';">Upload/Change Photo</a>
 							</div>
 						</div>
-						<div class="row">
-							<!--for edit profile -->
+						<div class="row"><!--major adjustments needed for this row -->
+							<div class="col-sm-12">
+								<div style="overflow-y: auto; height: auto;" id="edit-profile-form">
+									<div class="form-group">
+										<label for="fname">First Name:</label>
+										<input id="fname" name="fname" class="ml-3">
+									</div>
+									
+									<div class="form-group">
+										<label for="lname">Last Name</label>
+										<input id="lname" name="lname" class="ml-3">
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-4">
+												<label>Date of Birth</label>
+											</div>
+											<div class="col-sm-4">
+												<select style="border-radius: 10px;" name="Month" class="custom-select-sm" class="month/year">
+				                                    <option value="january">January</option>
+				                                    <option value="february">February</option>
+				                                    <option value="march">March</option>
+				                                    <option value="april">April</option>
+				                                    <option value="may">May</option>
+				                                    <option value="june">June</option>
+				                                    <option value="july">July</option>
+				                                    <option value="august">August</option>
+				                                    <option value="september">September</option>
+				                                    <option value="october">October</option>
+				                                    <option value="november">November</option>
+				                                    <option value="december">December</option>
+                                				</select>
+											</div>
+											<div class="col-sm-4">
+												<select style="border-radius: 10px;" name="Year" class="custom-select-sm" class="month/year">
+                                    				<option value="2018">2018</option>
+                                    				<option value="2017">2017</option> 
+                                				</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<label for="lname" class="col-sm-6 col-form-label">Gender:</label>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="form-check">
+														<input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="male" checked>
+														<label class="form-check-label" for="gridRadios1">
+															Male
+														</label>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-check">
+														<input class="form-check-input" type="radio" name="gender" id="gridRadios2" value="female">
+														<label class="form-check-label" for="gridRadios2">
+															Female
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-6"  id="profile-description" style="border: 1px solid blue;">
+					<div class="col-6"  id="profile-description">
 						<div class="row">
 							<div class="col-sm-12">
-								<textarea class="mt-2" style="border-radius: 10px;" rows="4" cols="50" placeholder="Write Something About You"></textarea>
+								<textarea class="mt-2" style="border-radius: 10px;" rows="4" cols="80" placeholder="Write Something About You"></textarea>
 							</div>
 						</div>
 						<div class="row">
 							<!--social media connect -->
 							<div class="col-sm-12">
-								<div class="form-group row ml-2">
-									<img class="social-icons" style="height:25px; width: 25px;" src="./images/facebook_icon.png">
-									<input class="social-connect ml-2"  type="text" name="facebook" placeholder="Linkedin URL">
+								<div class="form-group row ml-2 justify-content-between">
+									<img class="social-icons" style="height:50px; width: 50px;" src="./images/facebook_icon.png">
+									<!--needs a conditional statement based on Oauth -->
+									<button class="btn-lg btn-danger mr-4">Disconnect</button>
 								</div>
-								<div class="form-group row ml-2">
-									<img class="social-icons" style="height:25px; width: 25px;" src="./images/likedin_icon.png">
-									<input class="social-connect ml-2"  type="text" name="facebook" placeholder="LinkedIn URL">
+								<div class="form-group row ml-2 justify-content-between">
+									<img class="social-icons" style="height:50px; width: 50px;" src="./images/facebook_icon.png">
+									<!--needs a conditional statement based on Oauth -->
+									<button class="btn-lg btn-danger mr-4">Disconnect</button>
 								</div>
-								<div class="form-group row ml-2">
-									<img class="social-icons" style="height:25px; width: 25px;" src="./images/Gmail_icon.png">
-									<input class="social-connect ml-2"  type="text" name="facebook" placeholder="Gmail URL">
+								<div class="form-group row ml-2 justify-content-between">
+									<img class="social-icons" style="height:50px; width: 50px;" src="./images/facebook_icon.png">
+									<!--needs a conditional statement based on Oauth -->
+									<button class="btn-lg btn-danger mr-4">Disconnect</button>
 								</div>
-								<div class="form-group row ml-2">
-									<img class="social-icons" style="height:25px; width: 25px;" src="./images/facebook_icon.png">
-									<input class="social-connect ml-2"  type="text" name="facebook" placeholder="Personal Website URL">
-								</div>
-								<div class="form-group row ml-2">
-									<img class="social-icons" style="height:25px; width: 25px;" src="./images/Wechat_icon.png">
-									<input class="social-connect ml-2"  type="text" name="facebook" placeholder="Mobile Number or Email">
-								</div>
+
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row" style="border: 1px solid orange"></div>
+				<div class="row mb-5">
+					<div class="col-12 mt-5" style="background-color: #e0f7fa; border:1px solid gray;"><!--jquery slick js ui interface for image slider -->
+						<h1 id="upcoming">Upcoming Courses</h1>
+						<div class="slick-slider">
+							<img src="./images/logo.png" class="slider-image">
+							<img src="./images/logo.png" class="slider-image">
+							<img src="./images/logo.png" class="slider-image">
+							<img src="./images/logo.png" class="slider-image">
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -140,5 +213,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
