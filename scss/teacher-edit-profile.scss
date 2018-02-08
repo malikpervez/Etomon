@@ -106,7 +106,6 @@ $primary-color : #e0f7fa;
 
 #edit-profile-form .form-group input{
 	border-radius: 10px;
-	margin-left: 50px;
 }
 
 .about-contact{
@@ -128,6 +127,25 @@ $primary-color : #e0f7fa;
 	padding-left: 10px;
 }
 
-.slider-image{
-	height: 50px;
+.slick-slider{
+	bottom: 5vh !important;
 }
+
+.plus-icon{
+  height: 1rem;
+  width: 1rem;
+}
+
+.delete-button {
+  border: none;
+  padding: 0;
+  background: none;
+  color: red;
+  margin-left: 5px;
+}
+
+.form-radius{
+  border-radius: 10px;
+}
+
+

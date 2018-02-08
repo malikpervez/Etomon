@@ -18,7 +18,7 @@
 			<div class="col d-flex align-items-center justify-content-center">
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: white;">
-						<img src="http://via.placeholder.com/50x50" style="border-radius: 50%;">
+						<img style="height:75px;width:75px; border-radius: 50%;" src="./images/stock-thumbnail.png" style="border-radius: 50%;">
 						Name
 						<span class="glyphicon glyphicon-chevron-down"></span>
 					</button>
@@ -53,7 +53,7 @@
 				</div>
 					<!-- Sidebar Links -->
 					<ul class="nav-list">
-						<li class="active"><a href="#">Edit Profile</a></li>
+						<li class="active"><a href="./notifcation.html">Notification</a></li>
 						<li><a href="#">Privacy & Security</a></li>
 						<li><a href="#">Payment Setting</a></li>
 						<li><a href="#">Transaction History</a></li>
@@ -67,8 +67,9 @@
 
 			<!--this takes up the right side of the page with a col-8 as a container-->
 			<div class="col-9">
+				<form> <!--form tag for editing teacher profile -->
 				<div class="row">
-					<div class="col-6" style="border: 1px solid gray;">
+					<div class="col-6" style="border: 1px solid gray; border-radius: 10px;">
 						<div class="row mt-2">
 							<div class="col-sm-6">
 								<img src="./images/stock-thumbnail.png" style="border-radius: 50%" id="prof-pic">
@@ -77,49 +78,56 @@
 								<a style="font-size: 20px; font-family: 'champagne-limo';">Upload/Change Photo</a>
 							</div>
 						</div>
-						<div class="row"><!--major adjustments needed for this row -->
+						<div class="row"><!--This is the form in the first column on the right side
+											for editing profile content -->
 							<div class="col-sm-12">
-								<div style="overflow-y: auto; height: auto;" id="edit-profile-form">
-									<div class="form-group">
-										<label for="fname">First Name:</label>
-										<input id="fname" name="fname" class="ml-3">
+								<div style="overflow-y: auto; height: 270px; overflow-x: hidden;" id="edit-profile-form">
+									<div class="form-group row">
+										<label for="fname" class="col-sm-5 col-form-label">First Name:</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="fname">
+										</div>
 									</div>
-									
-									<div class="form-group">
-										<label for="lname">Last Name</label>
-										<input id="lname" name="lname" class="ml-3">
+
+									<div class="form-group row">
+										<label for="lname" class="col-sm-5 col-form-label">Last Name:</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="lname">
+										</div>
 									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-sm-4">
-												<label>Date of Birth</label>
-											</div>
-											<div class="col-sm-4">
-												<select style="border-radius: 10px;" name="Month" class="custom-select-sm" class="month/year">
-				                                    <option value="january">January</option>
-				                                    <option value="february">February</option>
-				                                    <option value="march">March</option>
-				                                    <option value="april">April</option>
-				                                    <option value="may">May</option>
-				                                    <option value="june">June</option>
-				                                    <option value="july">July</option>
-				                                    <option value="august">August</option>
-				                                    <option value="september">September</option>
-				                                    <option value="october">October</option>
-				                                    <option value="november">November</option>
-				                                    <option value="december">December</option>
-                                				</select>
-											</div>
-											<div class="col-sm-4">
-												<select style="border-radius: 10px;" name="Year" class="custom-select-sm" class="month/year">
-                                    				<option value="2018">2018</option>
-                                    				<option value="2017">2017</option> 
-                                				</select>
+									<div class="form-group row">
+										<label for="lname" class="col-sm-5 col-form-label">Date of Birth:</label>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="col-sm-6">
+													<select name="Month" class="custom-select" class="month/year">
+														<option value="january">Jan</option>
+														<option value="february">Feb</option>
+														<option value="march">Mar</option>
+														<option value="april">April</option>
+														<option value="may">May</option>
+														<option value="june">Jun</option>
+														<option value="july">Jul</option>
+														<option value="august">Aug</option>
+														<option value="september">Sep</option>
+														<option value="october">Oct</option>
+														<option value="november">Nov</option>
+														<option value="december">Dec</option>
+													</select>
+												</div>
+
+												<div class="col-sm-6">
+													<select name="Year" class="custom-select" class="month/year">
+														<option value="2018">2018</option>
+														<option value="2017">2017</option> 
+													</select>
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="row">
-										<label for="lname" class="col-sm-6 col-form-label">Gender:</label>
+
+									<div class="form-group row">
+										<label for="lname" class="col-sm-5 col-form-label">Gender:</label>
 										<div class="col-sm-6">
 											<div class="row">
 												<div class="col-sm-6">
@@ -141,14 +149,77 @@
 											</div>
 										</div>
 									</div>
+									<div class="form-group row">
+										<label for="language" class="col-sm-5 col-form-label">Language</label>
+										<div class="col-sm-6" id="addlanguage">
+											<select style="width: 150px" name="language" class="custom-select-sm form-radius" class="langauge">
+												<option value="">English</option>  
+											</select>
+											<img src="./images/plus_icon.png" class="plus-icon" id="add-lang-button">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="degree" class="col-sm-5 col-form-label">Degree</label>
+										<div class="col-sm-6" id="add-degree">
+											<select style="width: 150px" name="degree" class="custom-select-sm form-radius" class="degree">
+												<option value="">some content</option>  
+											</select>
+											<img src="./images/plus_icon.png" class="plus-icon" id="add-degree-button">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="lname" class="col-sm-5 col-form-label">Field of Study:</label>
+										<div class="col-sm-6" id="add-field">
+											<select name="Month" class="custom-select-sm form-radius" class="month/year">
+												<option value="">Information Technology</option>  
+											</select>
+											<img src="./images/plus_icon.png" class="plus-icon" id="add-field-button">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="fieldstudy" class="col-sm-5 col-form-label">Country</label>
+										<div class="col-sm-6">
+											<select style="width: 150px" name="fieldstudy" class="custom-select-sm form-radius" class="month/year">
+												<option value="">United States</option>  
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group row">
+									<label for="address" class="col-sm-5 col-form-label">Address:</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control-sm form-radius" id="address" value="">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="city" class="col-sm-5 col-form-label">City:</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control-sm form-radius" id="city" value="">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="state" class="col-sm-5 col-form-label">State:</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control-sm form-radius" id="state" value="">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="zip" class="col-sm-5 col-form-label">Zip</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control-sm form-radius" id="zip" value="">
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-6"  id="profile-description">
+					<div class="col-6"  id="profile-description" style="border-radius: 10px;">
 						<div class="row">
 							<div class="col-sm-12">
-								<textarea class="mt-2" style="border-radius: 10px;" rows="4" cols="80" placeholder="Write Something About You"></textarea>
+								<textarea class="mt-2" style="border-radius: 10px; width: 100%;" placeholder="Write Something About You"></textarea>
 							</div>
 						</div>
 						<div class="row">
@@ -174,16 +245,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mb-5">
-					<div class="col-12 mt-5" style="background-color: #e0f7fa; border:1px solid gray;"><!--jquery slick js ui interface for image slider -->
-						<h1 id="upcoming">Upcoming Courses</h1>
+				</form>
+				<div class="row">
+					<div class="col-12 mt-2" style="background-color: #e0f7fa; border:1px solid gray; border-radius: 10px;"><!--jquery slick js ui interface for image slider -->
+						<h3 id="sharedvid-photo">Shared Videos and Photos</h3>
 						<div class="slick-slider">
 							<img src="./images/logo.png" class="slider-image">
 							<img src="./images/logo.png" class="slider-image">
 							<img src="./images/logo.png" class="slider-image">
 							<img src="./images/logo.png" class="slider-image">
+							<img src="./images/logo.png" class="slider-image">
+							<img src="./images/logo.png" class="slider-image">
+							<img src="./images/logo.png" class="slider-image">
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -214,6 +288,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 <script type="text/javascript" src="./js/slick.min.js"></script>
-<script type="text/javascript" src="./js/script.js"></script>
+<script type="text/javascript" src="./js/teacher-edit-slider.js"></script>
+<script type="text/javascript" src="./js/add-drop.js"></script>
+
 </body>
 </html>
