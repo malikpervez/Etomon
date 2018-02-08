@@ -114,14 +114,38 @@
 				<!--based on which radio button is clicked a different payment form will come up-->
 				<div class="row mt-2">
 					<div class="col-12">
-						<div class="form-group row">
-							<label class="col-sm-1">Payment Method:</label>
-							<input type="radio" class="col-sm-2 mt-3"><img style="height:20px;width:45px;" src="./images/credit_card.png">
+						<div class="form-group row d-flex justify-content-around">
+							<label class="col-sm-1"><strong>Payment Method:</strong></label>
+							<div class="col-sm-2 mt-2">
+								<input type="radio" name="card-radios" class=""><img style="height:40px;width:45px;" src="./images/credit_card.png">
+							</div>
+							<div class="col-sm-2 mt-2">
+								<input type="radio" name="card-radios" class=""><img style="height:40px;width:45px;" src="./images/paypal.png">
+							</div>
+							<div class="col-sm-2 mt-2">
+								<input type="radio" name="card-radios" class=""><img style="height:40px;width:45px;" src="./images/alipay_icon.png">
+							</div>
+							<div class="col-sm-2 mt-2">
+								<input type="radio" name="card-radios" class=""><img style="height:40px;width:45px;" src="./images/Wechat_icon.png">
+							</div>
+
 						</div>	
 					</div>
 				</div>
 
+				<!-- each form for each payment method -->
 
+				<!--form for credit & debit cards -->
+				<div class="row">
+					<div class="col-12" id="credit">
+						<div class="form-group row">
+							<label class="col-3 form-label">Credit Card #1</label>
+							<input type="text" class="col-3 form-control">
+							<img style="height:40px;width:45px;" class="ml-2" src="./images/amex.png">
+							<img style="height:40px;width:45px;" class="ml-2" src="./images/amex.png">
+						</div>	
+					</div>
+				</div>
 
 			</div>
 		</div>
