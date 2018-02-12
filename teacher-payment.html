@@ -9,6 +9,22 @@
 </head>
 <body>
 
+
+	<!--search overlay -->
+	<div id="search-overlay" class="block">
+		<div class="centered">
+			<div id='search-box'>
+				<i id="close-btn" class="fa fa-times fa-2x"></i>
+				<form action='/search' id='search-form' method='get' target='_top'>
+					<input id='search-text' name='q' placeholder='Search' type='text' />
+					<button id='search-button' type='submit'>                     
+						<span>Search</span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<!--header -->
 	<div class="container-fluid" id="header">
 		<div class="d-flex flex-row">
@@ -44,7 +60,7 @@
 					<li><a>Listing</a></li>
 					<li><a>Stats</a></li>
 					<li><a>Help<a></li>
-					<li><a><span class="fa fa-search"></span></a></li>
+					<li id="search-btn"><a><span  class="fa fa-search"></span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -234,6 +250,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 <script type="text/javascript" src="./js/add-drop.js"></script>
-
+<script type="text/javascript" src="./js/search.js"></script>
 </body>
 </html>

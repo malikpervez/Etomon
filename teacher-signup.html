@@ -3,6 +3,8 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/teacher-signup.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
 	<title></title>
 </head>
 <body>
@@ -72,30 +74,47 @@
     </div>
 
 
+    <!--header -->
+    <div class="container-fluid" id="header">
+        <div class="d-flex flex-row">
+            <div class="col d-flex justify-content-start">
+                <img id="logo" src="./images/white_logo.png">
+            </div><!--logo -->
+            <div class="col d-flex flex-wrap justify-content-end">
+                <div class="btn-group mt-4">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: white;">
+                        <img id="thumbail" src="./images/stock-thumbnail.png" style="border-radius: 50%;">
+                        Name
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
 
-	<!-- logo,signup, and search -->
-
-	<div class="container-fluid" style="background-color: #e0f7fa;">
-		<div class="d-flex flex-row">
-			<div class="col-6 d-flex justify-content-start">
-				<img src="./images/logo.png" id="logo">
-			</div>
-			<div class="col-6 d-flex justify-content-center align-items-center flex-column">
-				<div class="row">
-					<div class="box">
-	  					<div class="container-1">
-	      					<span class="icon"><i class="fa fa-search"></i></span>
-	      					<input type="search" id="search" placeholder="Search..." />
-	  					</div>
-					</div>
-				</div>
-				<div class="row">
-					<button id="signup" class="mr-5"><span id="signup-icon"></span>Sign Up</button>
-	      			<button id="signin" class="ml-5"><span id="signin-icon"></span>Sign In</button>
-      			</div>
-			</div>
-		</div>
-	</div>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Member name (you)</li>
+                        <li>
+                            <a href="#" title="Select this card"><img src="http://via.placeholder.com/50x50">Name</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Select this card"><img src="http://via.placeholder.com/50x50">0123 4567 8912 3456</a>
+                        </li>
+                        <li class="dropdown-header">Member name</li>
+                        <li>
+                            <a href="#" title="Select this card"><img src="http://via.placeholder.com/50x50">0123 4567 8912 3456</a>
+                        </li>
+                    </ul>
+                </div><!--dropdown for profile image,name and description -->
+                
+                <ul id="header-nav">
+                    <li><a>Inbox</a></li>
+                    <li><a>Calender</a></li>
+                    <li><a>Listing</a></li>
+                    <li><a>Stats</a></li>
+                    <li><a>Help<a></li>
+                    <li><a><span class="fa fa-search"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--container for header -->
+	
 
 
 	<!--page content -->
@@ -299,18 +318,66 @@
 
 
 
-	<!-- footer container-->
-	<div class="container mt-5 ">
-		<div class="row">
-			<div class="col-8 d-flex justify-content-end">
-				<a class="about-contact pr-3"><strong>About our Site</strong></a>
-				<a class="about-contact"><strong>Contact Info</strong></a>
-			</div>
-			<div class="col-4 d-flex justify-content-center">
-				<a id="all-rights"><i>All Rights Reserved 2018</i></a>
-			</div>
-		</div>
-	</div>
+	<!--footer-->
+    <div class="container-fluid mt-5" id="footer">
+        <div class="row">
+            <div class="col-2">
+                <ul class="footer-title">
+                    <p class="mb-3 footer-head"><a>Etomon</a></p>
+                    <li><a>Careers</a></li>
+                    <li><a>Policies</a></li>
+                    <li><a>Help</a></li>
+                    <li><a>Diversity Community</a></li>
+                    <li><a>Volunteer Community</a></li>
+                    <li><a>Social Responsibility</a></li>
+                    <select class="mt-3">
+                        <option>English</option>
+                    </select>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul class="footer-title">
+                    <p class="mb-3 footer-head">Discover</p>
+                    <li>Trust & Safety</li>
+                    <li>Learn Credit</li>
+                    <li>Gift Cards</li>
+                    <li>Guidebooks</li>
+                </ul>   
+            </div>
+            <div class="col-2">
+                <ul class="footer-title">
+                    <p class="mb-3 footer-head">Instructing</p>
+                    <li>
+                        Why Instucting
+                    </li>
+                    <li>
+                        Refer Instruction
+                    </li>
+                    <li>
+                        Instructing Ability
+                    </li>
+                    <li>
+                        Responsible Instructing
+                    </li>
+                    <li>
+                        Community Center
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <img id="world-map" src="./images/world_map.png">
+                <ul id="social-media">
+                    <li>Follow us on:</li>
+                    <li><img src="./images/facebook_icon.png"></li>
+                    <li><img src="./images/twitter.png"></li>
+                    <li><img src="./images/likedin_icon.png"></li>
+                    <li><img src="./images/youtube.png"></li>
+                    <li><img src="./images/Wechat_icon.png"></li>
+                </ul>
+                <p id="all-rights" class="mt-5 pt-4"><i>All Rights Reserved.2018</i></p>
+            </div>
+        </div>
+    </div><!--footer container-->
 
 <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
