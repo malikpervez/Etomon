@@ -1,0 +1,25 @@
+$primary-color : #e0f7fa;
+$footer-color: #9dcdd3;
+@font-face {
+    font-family: 'champagne';
+    src: url(./fonts/champagne.ttf)
+}
+
+@font-face {
+    font-family: 'champagne-limo';
+    src: url(./fonts/champagne-limo.ttf)
+}
+
+@font-face {
+    font-family: 'myriad-pro';
+    src: url(./fonts/Myriad-Pro.ttf);
+}
+
+#teacher-cred{
+	border-radius: 10px;
+}
+
+.listing-icons{
+	height: 50px;
+	width: 50px;
+}

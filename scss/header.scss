@@ -17,6 +17,7 @@ $header-color: #73c4d8;
 
 #header{
 	background: linear-gradient(100deg, $header-color, $header-color, white, white);
+  border-bottom: 1px solid grey;
 }
 
 #logo{
@@ -84,7 +85,6 @@ $header-color: #73c4d8;
 
 
 #search-btn:hover{
-  background-color: rgba(0,0,0,0.5);
   cursor: pointer;
   
 }
