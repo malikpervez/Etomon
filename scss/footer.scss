@@ -1,0 +1,60 @@
+$primary-color : #e0f7fa;
+$secondary-color: #9dcdd3;
+@font-face {
+    font-family: 'champagne';
+    src: url(./fonts/champagne.ttf)
+}
+
+@font-face {
+    font-family: 'champagne-limo';
+    src: url(./fonts/champagne-limo.ttf)
+}
+
+@font-face {
+    font-family: 'myriad-pro';
+    src: url(./fonts/Myriad-Pro.ttf);
+}
+
+#footer{
+	background-color: $secondary-color
+}
+
+.footer-title{
+	list-style-type: none;
+}
+
+.footer-title li{
+	margin: 0 0 16px 0;
+	// font-weight: bold;
+}
+
+.footer-title li a {
+	text-decoration: none;
+	color: black;
+}
+
+.footer-head{
+	font-family: "champagne-limo";
+	font-size: 18pt;
+}
+
+#world-map{
+	display: block;
+	margin: 0 auto;
+}
+
+#social-media{
+	list-style-type:none;
+	display: inline-flex;
+}
+
+#social-media li img {
+	height: 25px;
+	width: 25px;
+	margin: 0 24px 0 42px;
+}
+
+#all-rights{
+	float: right;
+	color: grey;
+}
