@@ -1,5 +1,5 @@
 $primary-color : #e0f7fa;
-$secondary-color: #9dcdd3;
+$header-color: #73c4d8;
 @font-face {
     font-family: 'champagne';
     src: url(./fonts/champagne.ttf)
@@ -13,4 +13,15 @@ $secondary-color: #9dcdd3;
 @font-face {
     font-family: 'myriad-pro';
     src: url(./fonts/Myriad-Pro.ttf);
+}
+
+#header{
+	background: linear-gradient(100deg, $header-color, $header-color, white, white);
+}
+
+#logo{
+	height: 25vh;
+	width: 20vw;
+	position: relative;
+
 }

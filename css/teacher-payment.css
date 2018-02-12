@@ -7,10 +7,6 @@
 @font-face {
   font-family: 'myriad-pro';
   src: url(./fonts/Myriad-Pro.ttf); }
-#logo {
-  height: 40vh;
-  width: 20vw; }
-
 .dropdown-toggle, .dropdown-menu {
   width: 300px; }
 

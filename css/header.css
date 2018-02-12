@@ -7,5 +7,12 @@
 @font-face {
   font-family: 'myriad-pro';
   src: url(./fonts/Myriad-Pro.ttf); }
+#header {
+  background: linear-gradient(100deg, #73c4d8, #73c4d8, white, white); }
+
+#logo {
+  height: 25vh;
+  width: 20vw;
+  position: relative; }
 
 /*# sourceMappingURL=header.css.map */

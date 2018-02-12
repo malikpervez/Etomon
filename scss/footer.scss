@@ -1,5 +1,5 @@
 $primary-color : #e0f7fa;
-$secondary-color: #9dcdd3;
+$footer-color: #9dcdd3;
 @font-face {
     font-family: 'champagne';
     src: url(./fonts/champagne.ttf)
@@ -16,7 +16,7 @@ $secondary-color: #9dcdd3;
 }
 
 #footer{
-	background-color: $secondary-color
+	background-color: $footer-color;
 }
 
 .footer-title{
