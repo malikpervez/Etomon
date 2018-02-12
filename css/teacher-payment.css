@@ -15,7 +15,8 @@
 .sidebar-header h1 {
   display: inline;
   border-bottom: 3px solid #e0f7fa;
-  font-family: champagne-limo; }
+  font-family: champagne-limo;
+  color: #333232cc; }
 
 .nav-list {
   list-style-type: none;
