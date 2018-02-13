@@ -64,6 +64,8 @@
 		</div>
 	</div><!--container for header -->
 
+
+	<!--page content -->
 	<div class="container-fluid">
 		<div class="row d-flex justify-content-end mt-4">
 			<div class="col-sm-2 d-flex">
@@ -80,14 +82,42 @@
 				<h2 style="font-family: 'champagne-limo'">Add New Listing</h2>
 			</div>
 		</div>
+
+		<!--right panel beginning of form -->
+		<form>
 		<div class="row">
-			<div class="col-5">
+			<div class="col-6">
 				<img id="teacher-cred" src="./images/teacher_cred.png">
 			</div>
-			<div class="col-7">
-				
+			<div class="col-6">
+				<div class="form-group row d-flex justify-content-around">
+					<select name="course" id="course" class=" col-3 form-control">
+						<option>Course</option>
+						<option></option>
+					</select>
+					<label for="course" style="position:relative; right: 50px;">(tutorial)</label>
+					<select class="col-3 form-control">
+						<option>(4hrs/week)</option>
+					</select>
+				</div>
+				<div class="form-group row d-flex justify-content-between">
+					<select title="Starting Date" class="col-3 form-control">
+						<option data-thumbnail="./images/blue_clock.png">starting date</option>
+					</select>
+				</div>
 			</div>
-		</div>	
+		</div>
+		<div class="row d-inline-flex mt-2">
+			<div class="col-6">
+				<p>Hours required to finish this course</p>
+			</div>
+			<div class="col-6">
+				<input type="button" value="-" id="minus" onclick="minus()">
+    			<input type="text" size="10" value="1" id="count">
+    			<input type="button" value="+" id="plus" onclick="plus()">
+			</div>
+		</div>
+		</form>	
 	</div>
 
 
@@ -164,5 +194,6 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 <script type="text/javascript" src="./js/add-drop.js"></script>
 <script type="text/javascript" src="./js/search.js"></script>
+<script type="text/javascript" src="./js/counter.js"></script>
 </body>
 </html>
