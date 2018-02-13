@@ -100,25 +100,94 @@
 						<option>(4hrs/week)</option>
 					</select>
 				</div>
-				<div class="form-group row d-flex justify-content-between">
-					<select title="Starting Date" class="col-3 form-control">
-						<option data-thumbnail="./images/blue_clock.png">starting date</option>
+				<div class="form-group row d-flex justify-content-around">
+					<button class=" col-3 btn btn-default dropdown-toggle ml-3" type="button" id="menu1" data-toggle="dropdown">
+					<img class="clock" src="./images/blue_clock.png">
+						<span class="caret">starting time</span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 1</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 2</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 3</a></li>
+						<li role="presentation" class="divider"></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 4</a></li>
+					</ul>
+					<div class="col-3"></div>
+					<button class=" col-3 btn btn-default dropdown-toggle mr-3" type="button" id="menu1" data-toggle="dropdown">
+					<img class="clock" src="./images/red_clock.png">
+						<span class="caret">ending time</span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 1</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 2</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 3</a></li>
+						<li role="presentation" class="divider"></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 4</a></li>
+					</ul>
+				</div>
+				<div class="form-group row d-flex justify-content-around">
+					<select style="position:relative; right:10px;" name="course" id="course" class=" col-3 form-control">
+						<option>Location</option>
+						<option></option>
 					</select>
+					<label for="course"></label>
+					<select style="position:relative; left:10px;" class="col-3 form-control">
+						<option>Group of 3</option>
+					</select>
+				</div>
+				<div class="form-group row d-flex justify-content-between">
+					<button style="position:relative;left: 25px;" class="col-3 btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+						<span class="caret"><strong>Course Outcome:</strong> 90%</span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 1</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 2</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 3</a></li>
+						<li role="presentation" class="divider"></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 4</a></li>
+					</ul>
+					<select style="position:relative; right: 46px;" name="course" id="course" class="col-3 form-control">
+						<option>Course</option>
+						<option></option>
+					</select>
+				</div>
+				<div class="row">
+					<div class='col-6'>
+						<div class="row ml-3">
+							<div class="col-sm-12" id="addlanguage">
+								<select style="width: 150px" name="language" class="custom-select-sm form-radius" class="langauge">
+									<option value="">English</option>  
+								</select>
+								<img src="./images/plus_icon.png" class="plus-icon" id="add-lang-button">
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<input type="file">
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row d-inline-flex mt-2">
-			<div class="col-6">
-				<p>Hours required to finish this course</p>
+				<div class="col-6">
+					<p>Hours required to finish this course</p>
+				</div>
+				<div class="col-6"><!--fix this -->
+					<input type="button" value="-" id="minus">
+	    			<input type="text" size="10" value="1" id="count">
+	    			<input type="button" value="+" id="plus">
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				
 			</div>
-			<div class="col-6">
-				<input type="button" value="-" id="minus" onclick="minus()">
-    			<input type="text" size="10" value="1" id="count">
-    			<input type="button" value="+" id="plus" onclick="plus()">
-			</div>
+			<div class="col-4"></div>
+			<div class="col-4"></div>
 		</div>
 		</form>	
 	</div>
+	
 
 
 	<!--footer-->
@@ -195,5 +264,6 @@
 <script type="text/javascript" src="./js/add-drop.js"></script>
 <script type="text/javascript" src="./js/search.js"></script>
 <script type="text/javascript" src="./js/counter.js"></script>
+
 </body>
 </html>

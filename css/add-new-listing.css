@@ -8,10 +8,26 @@
   font-family: 'myriad-pro';
   src: url(./fonts/Myriad-Pro.ttf); }
 #teacher-cred {
-  border-radius: 10px; }
+  border-radius: 10px;
+  height: 100%;
+  width: 100%; }
 
 .listing-icons {
   height: 50px;
   width: 50px; }
+
+.dropdown-toggle, .dropdown-menu {
+  height: 40px;
+  width: 178px;
+  border: none !important;
+  background-color: white; }
+
+.clock {
+  height: 25px;
+  width: 25px; }
+
+.plus-icon {
+  height: 1rem;
+  width: 1rem; }
 
 /*# sourceMappingURL=add-new-listing.css.map */
