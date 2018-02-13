@@ -29,7 +29,7 @@ $footer-color: #9dcdd3;
 .dropdown-toggle, .dropdown-menu {
     height: 40px;
     width: 178px;
- 	border:none !important;
+ 	border: none !important;
     background-color: white;
 }
 .clock{
@@ -42,3 +42,15 @@ $footer-color: #9dcdd3;
 	width: 1rem;
 }
 
+.red-icons{
+	height: 100px;
+	width: 100px;
+}
+
+#blue{
+	background-color: $primary-color;
+}
+
+#red{
+	background-color: rgb(124,0,0)
+}
