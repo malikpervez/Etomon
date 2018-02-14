@@ -1,0 +1,27 @@
+{
+  "name": "etomon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "www": "node ./bin/www"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "^4.16.2",
+    "fullcalendar": "^3.8.0",
+    "google-auth-library": "^0.12.0",
+    "mongodb": "^3.0.0-rc0",
+    "mongoose": "^5.0.0-rc1",
+    "multer": "^1.3.0",
+    "request": "^2.83.0",
+    "socket.io": "latest",
+    "templatesjs": "^2.0.0"
+  }
+}
