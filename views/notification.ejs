@@ -18,6 +18,138 @@
 <body>
 <%-include("./partials/header.ejs")%>
 
+	
+	<div class="container-fluid mt-4">
+		<div class="row">
+			<!--sidebar-->
+			<%-include("./partials/sidebar.ejs")%>
+			<div class="col-9 mt-4">
+				<div class="row">
+					<div class="col-6">
+						<h3 class="checkbox-headers">Send notifications via:</h3>
+						<br>
+						<label class="check-box-container pb-4"><strong>Etomon Messages</strong>
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+						<label class="check-box-container mt-4"><strong>Email</strong>
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="col-6">
+						<h3 class="checkbox-headers ml-4">Recieve SMS messages via:</h3>
+						<br>
+						<div style="display:inline-flex;">
+							<label class="check-box-container pb-3 ml-4"><strong>Phone #1</strong>
+  								<input type="checkbox">
+  								<span class="checkmark"></span>
+							</label>
+							<label for "phone1">
+								<input type="text" id="phone1" name="phone1" />
+							</label>
+						</div>
+						<div style="display:inline-flex;">
+							<label class="check-box-container mt-4 ml-4"><strong>Phone #2</strong>
+  								<input type="checkbox">
+  								<span class="checkmark"></span>
+							</label>
+							<label for "phone2">
+								<input type="text" id="phone2" name="phone2" style="margin-top: 1em;" />
+							</label>
+						</div>
+					</div>
+				</div><!-- nested rows for notifcations via email,phone, and etomon messages -->
+
+				<div class="row">
+					<div class="col-12 mt-4">
+						<h3 class="checkbox-headers">Send reminders and suggestions via:</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 mt-4">
+						<label class="check-box-container"><strong>Etomon Messages</strong>
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+					</div>	
+					<div class="col-4 mt-4">
+						<label class="check-box-container"><strong>Email</strong>
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="col-4 mt-4">
+						<label class="check-box-container"><strong>Text Messages</strong>
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div> <!--reminders and suggestions checkboxes -->
+
+				<div class="row">
+					<div class="col-12 mt-4">
+						<h3 class="checkbox-headers">Send promotions and tips via:</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 mt-4">
+						<label class="check-box-container"><strong>Etomon Messages</strong>
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+					</div>	
+					<div class="col-4 mt-4">
+						<label class="check-box-container"><strong>Email</strong>
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="col-4 mt-4">
+						<label class="check-box-container"><strong>Text Messages</strong>
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div><!--promotions and tips checkboxes-->
+
+				<div class="row">
+					<div class="col-12 mt-4">
+						<h3 class="checkbox-headers">Send all the update information about policy, community, or courses via:</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 mt-4">
+						<label class="check-box-container"><strong>Etomon Messages</strong>
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+					</div>	
+					<div class="col-4 mt-4">
+						<label class="check-box-container"><strong>Email</strong>
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="col-4 mt-4">
+						<label class="check-box-container"><strong>Text Messages</strong>
+  							<input type="checkbox">
+  							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div><!--send updates for policy and community checkboxes-->
+
+				<div class="row">
+					<div class="col-12 mt-5">
+						<input id="checkBox" type="checkbox" id="teacher-calls"><!--etomon messages -->
+						<label for "teacher-calls" style="color: #7c0000">Receive calls from teacher when necessary</label>
+					</div>
+				</div>
+			</div>
+		</div><!--parent row for emails and phone -->
+	</div><!--container for navbar and page content -->
+
+
 
 <%-include("./partials/footer.ejs")%>
 </body>
