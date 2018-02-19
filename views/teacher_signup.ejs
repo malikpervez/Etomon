@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/footer.css">
+	<link rel="stylesheet" type="text/css" href="./css/teacher-signup.css">
+	<title></title>
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+	<script type="text/javascript" src="./js/add-drop.js"></script>
+<script type="text/javascript" src="./js/signup.js"></script>
+</head>
+<body>
+<%-include("./partials/header.ejs")%>
+	<!--page content -->
+	<div class="container">
+		<div class="d-flex flex-row mt-5 mb-5">
+				<h2 style="font-family: 'champagne-limo';" class="">General Information:</h2>
+		</div> <!--teacher-student checkboxes -->
+
+		<form>
+        <div class="row">
+            <div class="col-6"><!--left side -->
+                <div class="form-group row">
+                    <label for="fname" class="col-sm-6 col-form-label">First Name:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control-sm form-radius" id="fname">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="lname" class="col-sm-6 col-form-label">Last Name:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control-sm form-radius" id="lname">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="lname" class="col-sm-6 col-form-label">Date of Birth:</label>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <select name="Month" class="custom-select-sm form-radius" class="month/year">
+                                    <option value="january">January</option>
+                                    <option value="february">February</option>
+                                    <option value="march">March</option>
+                                    <option value="april">April</option>
+                                    <option value="may">May</option>
+                                    <option value="june">June</option>
+                                    <option value="july">July</option>
+                                    <option value="august">August</option>
+                                    <option value="september">September</option>
+                                    <option value="october">October</option>
+                                    <option value="november">November</option>
+                                    <option value="december">December</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <select name="Year" class="custom-select-sm form-radius" class="month/year">
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option> 
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="lname" class="col-sm-6 col-form-label">Gender:</label>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="male" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Male
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="gridRadios2" value="female">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="language" class="col-sm-6 col-form-label">Language</label>
+                    <div class="col-sm-6" id="addlanguage">
+                        <select style="width: 150px" name="language" class="custom-select-sm form-radius" class="langauge">
+                            <option value="">English</option>  
+                        </select>
+                        <img src="./images/plus_icon.png" class="plus-icon" id="add-lang-button">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="degree" class="col-sm-6 col-form-label">Degree</label>
+                    <div class="col-sm-6" id="add-degree">
+                        <select style="width: 150px" name="degree" class="custom-select-sm form-radius" class="degree">
+                            <option value="">some content</option>  
+                        </select>
+                        <img src="./images/plus_icon.png" class="plus-icon" id="add-degree-button">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="fieldstudy" class="col-sm-6 col-form-label">Field of Study:</label>
+                    <div class="col-sm-6" id="add-field">
+                        <select style="width: 150px" name="fieldstudy" class="custom-select-sm form-radius" class="month/year">
+                            <option value="">Some Content</option>  
+                        </select>
+                        <img src="./images/plus_icon.png" class="plus-icon" id="add-field-button">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6"><!--right side -->
+                <div class="form-group row">
+                    <label for="fieldstudy" class="col-sm-6 col-form-label">Country</label>
+                    <div class="col-sm-6">
+                        <select style="width: 150px" name="fieldstudy" class="custom-select-sm form-radius" class="month/year">
+                            <option value="">United States</option>  
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="address" class="col-sm-6 col-form-label">Address</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control-sm form-radius" id="address" value="">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="city" class="col-sm-6 col-form-label">City</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control-sm form-radius" id="city" value="">
+                    </div>
+                </div>
+                <div class="form-group row"> <!--needs fixing -->
+                    <label for="state" class="col-sm-6 col-form-label">State</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control-sm form-radius" id="state" value="">
+                    </div>
+                    <label for= "zipcode" class="col-sm-6 col-form-label">Zip</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control-sm form-radius" id="zipcode" value="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                	<label for="state" class="col-sm-6 col-form-label">Email</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control-sm form-radius" id="email" value="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                	<label for="state" class="col-sm-6 col-form-label">Password</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control-sm form-radius" id="password" value="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                	<label for="state" class="col-sm-6 col-form-label">Re-enter Password</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control-sm form-radius" id="password" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <h3 class="text-left">Certificates:</h3>
+                    <div class="col-12">
+                         <div>
+                            <label for="image_uploads">Choose images to upload (PNG,JPG)</label>
+                            <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple>
+                        </div>
+                    <div class="preview">
+                        <p>No files currently selected for upload</p>
+                    </div>
+                    <div>
+                        <button>Submit</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                	<div class="col-12">
+                		<p style="color: #7c0000; font-size: 10pt;">N.B.:You can add or edit the information in the profile setting</p>
+                	</div>
+                </div>
+                <div class="row d-flex flex-row mt-3 justify-content-end">
+                	<div class="col-4 flex-column">
+                		<h3 style="font-family: 'champagne-limo';">Sign up with:</h3>
+                	</div>
+                	<div class="col-2 flex-column"><img src="./images/facebook_icon.png" class="social-icons"></div>
+                	<div class="col-2 flex-column"><img src="./images/likedin_icon.png" class="social-icons"></div>
+                	<div class="col-2 flex-column"><img src="./images/gmail_icon.png" class="social-icons"></div>
+                	<div class="col-2 flex-column"><img src="./images/Wechat_icon.png" class="social-icons"></div>
+                </div>
+            </div><!--right side -->
+        </div><!-- form for teacher/student-->
+        </form> 
+        <div class="flex-row">
+        	<div class="col-12 d-flex justify-content-end">
+        		<button class="btn btn-primary mr-3" data-toggle="modal" data-target="#myModal">Next</button>
+        	</div>
+        </div>
+	</div>
+
+
+
+<%-include("./partials/footer.ejs")%>
+</body>
+</html>

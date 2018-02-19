@@ -1,0 +1,53 @@
+$primary-color : #e0f7fa;
+
+@font-face {
+    font-family: 'champagne';
+    src: url(./fonts/champagne.ttf)
+}
+
+@font-face {
+    font-family: 'champagne-limo';
+    src: url(./fonts/champagne-limo.ttf)
+}
+
+@font-face {
+    font-family: 'myriad-pro';
+    src: url(./fonts/Myriad-Pro.ttf);
+}
+
+#sidebar {
+        min-width: 250px;
+        max-width: 250px;
+        height: 100vh;
+}
+
+.sidebar-header h1 {
+	display: inline;
+	border-bottom: 3px solid $primary-color;
+	font-family: champagne-limo;
+  color: #333232cc;
+}
+
+
+.nav-list{
+	list-style-type: none;
+	padding-left: 5vw;
+	margin-top: 5vh;
+
+}
+
+.nav-list li{
+	margin: 14px 0;
+}
+
+.nav-list li a {
+	color: black;
+	font-family: champagne-limo;
+	font-size: 18pt;
+}
+
+#cancel{
+	color: #7c0000;
+	margin-top: 25vh;
+	font-family: "champagne-limo";
+}

@@ -21,9 +21,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 //app.use(multer('/tmp').array('image'));
 
+app.get("/home", function(req,res){
+	res.render("lander.ejs")
+});
+
+app.get("/teacher-signup", function(req,res){
+	res.render("teacher_signup.ejs")
+});
 
 app.get("/notification", function(req,res){
 	res.render("notification.ejs");
+
+});
+
+app.get("/teachers/payment", function(req,res){
+	res.render("teacher_payment.ejs")
 });
 
 // app.get("/profile", function (req, res) {

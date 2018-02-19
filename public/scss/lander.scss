@@ -1,5 +1,5 @@
 $primary-color : #e0f7fa;
-
+$header-color: #73c4d8;
 @font-face {
     font-family: 'champagne';
     src: url(./fonts/champagne.ttf)
@@ -15,48 +15,30 @@ $primary-color : #e0f7fa;
     src: url(./fonts/Myriad-Pro.ttf);
 }
 
-
-#logo {
-  height: 40vh;
-  width: 20vw;
- }
-
-.dropdown-toggle, .dropdown-menu {
-  width: 300px; }
-
-.btn-group{
-	margin-left: 5vw;
-}
-.btn-group img {
-  margin-right: 12px; }
-
-.dropdown-toggle {
-  padding-right: 50px; }
-
-.dropdown-toggle .glyphicon {
-  margin-left: 20px;
-  margin-right: 80px; }
-
-.dropdown-menu > li > a:hover {
-  background: white; }
-
-/* $search-blue */
-.dropdown-header {
-  background: #ccc;
-  font-size: 14px;
-  font-weight: 700;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 10px;
-  margin-bottom: 5px; }
-
- 
-.checkbox-headers{
-	font-family:champagne-limo;
+.student{
+	height: 400px;
+	width: 500px;
+	border-radius: 10px;
 }
 
-.about-contact{
-    margin-left: 10px;
+.best{
+	height: 100px;
+	width: 100px;
+}
+
+.teach{
+	height: 50px;
+	width: 50px;
+}
+
+#signup-in {
+  font-family: "champagne-limo";
+  color: #000000;
+  font-size: 20px;
+  padding: 11px 20px 10px 20px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
 }
 
 .check-box-container {
@@ -125,12 +107,20 @@ $primary-color : #e0f7fa;
     transform: rotate(45deg);
 }
 
-input#phone1{
-	margin-left: 10px;
-	border-radius: 10px;
+#signin {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  font-family: "champagne-limo";
+  background: $primary-color;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 1px;
+  text-decoration: none;
 }
 
-input#phone2{
-	margin-left: 10px;
-	border-radius: 10px;
+#signin:hover {
+  text-decoration: none;
 }
