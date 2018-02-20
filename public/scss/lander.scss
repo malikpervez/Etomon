@@ -27,8 +27,8 @@ $header-color: #73c4d8;
 }
 
 .teach{
-	height: 50px;
-	width: 50px;
+	height: 75px;
+	width: 75px;
 }
 
 #signup-in {
@@ -107,20 +107,6 @@ $header-color: #73c4d8;
     transform: rotate(45deg);
 }
 
-#signin {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  font-family: Arial;
-  color: #000000;
-  font-size: 20px;
-  font-family: "champagne-limo";
-  background: $primary-color;
-  padding: 10px 20px 10px 20px;
-  border: solid #000000 1px;
-  text-decoration: none;
-}
-
-#signin:hover {
-  text-decoration: none;
+figcaption{
+	font-size: 20pt;
 }

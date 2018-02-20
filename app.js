@@ -25,6 +25,10 @@ app.get("/home", function(req,res){
 	res.render("lander.ejs")
 });
 
+app.get("/signup", function(req,res){
+	res.render("signup.ejs")
+})
+
 app.get("/teacher-signup", function(req,res){
 	res.render("teacher_signup.ejs")
 });

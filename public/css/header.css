@@ -156,4 +156,29 @@ h1 span {
   color: #777;
   cursor: pointer; }
 
+#signin {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  font-family: "champagne-limo";
+  background: #e0f7fa;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 1px;
+  text-decoration: none; }
+
+#signin:hover {
+  text-decoration: none; }
+
+#signup-in {
+  font-family: "champagne-limo";
+  color: #000000;
+  font-size: 20px;
+  padding: 11px 20px 10px 20px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none; }
+
 /*# sourceMappingURL=header.css.map */

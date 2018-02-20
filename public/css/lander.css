@@ -17,8 +17,8 @@
   width: 100px; }
 
 .teach {
-  height: 50px;
-  width: 50px; }
+  height: 75px;
+  width: 75px; }
 
 #signup-in {
   font-family: "champagne-limo";
@@ -87,20 +87,7 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-#signin {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  font-family: Arial;
-  color: #000000;
-  font-size: 20px;
-  font-family: "champagne-limo";
-  background: #e0f7fa;
-  padding: 10px 20px 10px 20px;
-  border: solid #000000 1px;
-  text-decoration: none; }
-
-#signin:hover {
-  text-decoration: none; }
+figcaption {
+  font-size: 20pt; }
 
 /*# sourceMappingURL=lander.css.map */

@@ -100,15 +100,7 @@
 
 
 	<!--header -->
-	<div class="container-fluid" id="header">
-		<div class="d-flex flex-row">
-			<div class="col d-flex justify-content-start">
-				<img id="logo" src="/images/white_logo.png">
-			</div><!--logo -->
-			<div class="col d-flex flex-wrap justify-content-end align-self-end">
-				<button id="signup-in" data-toggle="modal" data-target="#myModal">Sign Up/Sign In</button>
-			</div>
-		</div>
+	<%-include("./partials/lander-header.ejs") %>
 	</div><!--container for header -->
 	<div class="jumbotron-fluid">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -156,36 +148,25 @@
 	</div>
 
 	<div class="container-fluid mt-4">
-		<div class="row d-flex" style="background-color: #8080802b;">
-			<div class="col-4 mt-3">
-				<div class="row d-flex justify-content-center">
-					<div class="col-sm-4">
-						<img src="./images/1st.png" class="best">
-					</div>
-					<div class="col-sm-4">
-						<h2 class=><i>Top online learning</i></h2>
-					</div>
-				</div>
+		<div class="row" style="background-color: #8080802b;">
+			<div class="col-4 mt-3 d-flex justify-content-center">
+				<figure>
+					<img src="./images/1st.png" class="best ml-5">
+					<figcaption><i>Top Online Learning</i></figcaption>
+				</figure>
+				
 			</div>
-			<div class="col-4 mt-3">
-				<div class="row d-flex justify-content-center">
-					<div class="col-4">
-						<img src="./images/best-teachers-icon.png" class="best">
-					</div>
-					<div class="col-4">
-						<h2 class="text-center"><i>Best Teachers</i></h2>
-					</div>
-				</div>
+			<div class="col-4 mt-3 d-flex justify-content-center">
+				<figure>
+					<img src="./images/best-teachers-icon.png" class="best ml-4">
+					<figcaption><i>Best Teacher's</i></figcaption>
+				</figure>
 			</div>
-			<div class="col-4 mt-3">
-				<div class="row d-flex justify-content-center">
-					<div class="col-4">
-						<img src="./images/best-prizes.png" class="best">
-					</div>
-					<div class="col-4">
-						<h2 class="text-center"><i>Best Prizes</i></h2>
-					</div>
-				</div>
+			<div class="col-4 mt-3 d-flex justify-content-center">
+				<figure>
+					<img src="./images/best-prizes.png" class="best">
+					<figcaption><i>Best Prizes</i></figcaption>
+				</figure>
 			</div>
 		</div><!--row for toponline,bestteacher,and bestprize-->
 	</div>
@@ -196,7 +177,7 @@
 				<h2>What We Do?</h2>
 			</div>
 		</div>
-		<div class="row mt-4">
+		<div class="row mt-4 mb-4">
 			<div class="col-6">
 				<img class="student" src="/images/student.png">
 			</div>
@@ -207,7 +188,7 @@
 	</div>
 
 	<div class="container mt-4">
-		<div class="row" style="border-bottom: 1px solid #e0f7fa;">
+		<div class="row">
 			<div class="col-4">
 				<img src="./images/class-course-icon.png" class="teach">
 				<p style="display:inline-block; font-family: 'champagne-limo';">Class Courses</p>
