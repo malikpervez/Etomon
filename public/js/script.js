@@ -30,14 +30,19 @@ $(document).ready(function(){
   });
 
   //cache the forms lookup
-var $signupForms = $('.signup-form');
-$('.signup-radio').on('change', function(e){
+  var $signupForms = $('.signup-form');
+  $('.signup-radio').on('change', function(e){
     var $this = $(e.target);
     console.log(e.target);
     //hide the forms that do not match the target selector
     $signupForms.not($this.data('target')).hide();
     //show the form that matches the target selector
     $signupForms.filter($this.data('target')).show();
+  });
+
+  //signup-in modal
+  $('#myModal').modal({
+  show: false,
   });
 
 });

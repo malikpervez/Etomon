@@ -25,7 +25,11 @@ app.get("/home", function(req,res){
 	res.render("lander.ejs")
 });
 
-app.get("/signup", function(req,res){
+app.get("/registration", function(req,res){
+	res.render("registration.ejs")
+});
+
+app.get("/complete-profile", function(req,res){
 	res.render("signup.ejs")
 })
 

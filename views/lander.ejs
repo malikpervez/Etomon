@@ -14,89 +14,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-	<script type="text/javascript" src="/js/signup.js"></script>
+	<script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body>
-
-	<!-- signup/in modal -->
-    <div class="modal fade" id="myModal">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form>
-                        <div class="row">
-                        	<div class="col-sm-12">
-                        		<div class="form-group row justify-content-center">
-                        			<label for="fname" class="col-sm-6 col-form-label">Email Address:</label>
-                    				<div class="col-sm-4">
-                        				<input type="text" class="form-control" id="fname">
-                    				</div>
-                        		</div>
-                        		<div class="form-group row justify-content-center">
-                        			<label for="password" class="col-sm-6 col-form-label">Password:</label>
-                    				<div class="col-sm-4">
-                        				<input type="password" class="form-control" id="password">
-                    				</div>
-                        		</div>
-                        		<div class="row">
-                        			<div class="col-11 d-flex justify-content-end">
-                        			<a style="color: #7c0000">Forgot Password</a>
-                        			</div>
-                        		</div>
-                        		<div class="row mt-4">
-                        			<div class="col-6 d-flex justify-content-center">
-	                        			<label class="check-box-container">
-	                        				<input type="checkbox" id="rememberme">
-	                        				<span class="checkmark"></span>
-	                        			</label>
-                        			</div>
-                        			<div class="col-6 d-flex justify-content-center">
-                        				<label style="font-size: 10pt" for ="rememberme"><strong>Remember Me</strong></label>
-                        			</div>
-                        		</div>
-                        		<div class="row">
-                        			<div class="col-11 d-flex justify-content-end">
-                        				<button id="signin">Sign In</button>
-                        			</div>
-                        		</div>
-                        		<div class="row mt-2">
-                        			<div class="col-4 d-flex justify-content-center">
-                        				<h5>Sign Up With:</h5>
-                        			</div>
-                        			<div class="col-8">
-                        				<ul id="social-media">
-                        					<li><img src="/images/facebook_icon.png"></li>
-                        					<li><img src="/images/twitter.png"></li>
-                        					<li><img src="/images/likedin_icon.png"></li>
-                        					<li><img src="/images/Wechat_icon.png"></li>
-                        				</ul>
-                        			</div>
-                        		</div>
-                        		<div class="row">
-                        			<div class="col-6 flex-wrap">
-                        				<div style="height: 200px;width:200px; margin-left: 25%; background-color: black;"></div>
-                        				<p class="text-center">Sign In with WeChat</p>
-                        			</div>
-                        			<div class="col-6">
-                        				<div style="height: 200px;width:200px; margin-left: 25%; background-color: black;"></div>
-                        				<p class="text-center">Sign In with WeChat</p>
-                        			</div>
-                        		</div>
-                        		<div class="row">
-                        			<div class="col-12">
-                        				<h4 class="text-center">If you don't have an account, click here to sign up</h4>
-                        			</div>
-                        		</div>
-                        	</div>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!--signup/in modal -->
+	<%-include("./partials/sign_up_modal.ejs")%>
 
 
 	<!--header -->
