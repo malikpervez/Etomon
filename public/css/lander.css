@@ -96,4 +96,23 @@ figcaption {
 .qrcode {
   margin-left: 28%; }
 
+.long-border {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #80808087; }
+
+.create-accnt {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  font-family: "champagne-limo";
+  background: #e0f7fa;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 1px;
+  text-decoration: none;
+  margin-left: 42%; }
+
 /*# sourceMappingURL=lander.css.map */

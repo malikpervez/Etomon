@@ -6,7 +6,8 @@ var bodyParser = require('body-parser');
 var fs = require("fs");
 var multer = require('multer');
 var request = require('request');
-
+var nodemailer = require("nodemailer");
+// var smtpTransport = require('nodemailer-smtp-transport');
 //app.use(multer({ dest: '/tmp/'}).array('image'));
 
 
@@ -45,6 +46,33 @@ app.get("/notification", function(req,res){
 app.get("/teachers/payment", function(req,res){
 	res.render("teacher_payment.ejs")
 });
+
+app.post("/registration", function(req,res){
+	var transporter = nodemailer.createTransport({
+	  	service: 'Gmail',
+	  	auth: {
+	      user: 'zyyangch@gmail.com',
+	      pass: 'etomon123'
+	  	}
+	});
+
+	var mailOptions = {
+    from: 'zyyangch@gmail.com',
+    to: 'mip12793@gmail.com',
+    subject: 'Testing test ✔',
+    text: 'It works! ✔',  //plaintext body
+    html: '<a href="http://localhost:3000/complete-profile">Click Here</a>'
+ 	};
+
+ 	//send mail with defined transport object
+	transporter.sendMail(mailOptions, function(error, info){
+ 		 if(error){
+   		 console.log(error);
+ 		 }else{
+    	console.log('Message sent: ' + info.response);
+   	}
+});
+})
 
 // app.get("/profile", function (req, res) {
 // 	var userinfo = {
