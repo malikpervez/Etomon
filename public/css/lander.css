@@ -90,4 +90,10 @@
 figcaption {
   font-size: 20pt; }
 
+#registration-form {
+  margin: 0 auto; }
+
+.qrcode {
+  margin-left: 28%; }
+
 /*# sourceMappingURL=lander.css.map */
